@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap-libs/uikit",
+  "name": "@pantherswap-libs/uikit",
   "version": "0.10.6",
-  "description": "Set of UI components for pancake projects",
+  "description": "Set of UI components for panther projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-uikit",
+  "repository": "https://github.com/pantherswap/panther-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
