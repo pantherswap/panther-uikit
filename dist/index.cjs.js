@@ -172,7 +172,7 @@ var getButtonVariantProp = function (prop) { return function (_a) {
     var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
     return theme.button[variant][prop];
 }; };
-var StyledButton = styled__default['default'].button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("border"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
+var StyledButton = styled__default['default'].button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    opacity: 0.75;\n  }\n\n  &:active:not(:disabled):not(.button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    opacity: 0.75;\n  }\n\n  &:active:not(:disabled):not(.button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? "100%" : "max-content");
 }, function (_a) {
@@ -184,10 +184,7 @@ var StyledButton = styled__default['default'].button(templateObject_1$2 || (temp
 }, function (_a) {
     var isLoading = _a.isLoading;
     return (isLoading ? 0.5 : 1);
-}, getButtonVariantProp("backgroundHover"), getButtonVariantProp("borderColorHover"), function (_a) {
-    var theme = _a.theme;
-    return theme.colors.secondary;
-}, getButtonVariantProp("backgroundActive"), getButtonVariantProp("boxShadowActive"), getDisabledStyles, removePointerEvents, styledSystem.space);
+}, getDisabledStyles, removePointerEvents, styledSystem.space);
 StyledButton.defaultProps = {
     fullWidth: false,
     type: "button",
@@ -356,11 +353,7 @@ var Icon$p = function (props) {
 
 var Icon$q = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.84199 5.00181C5.35647 2.40193 7.35138 0 9.9962 0C12.3302 0 14.2222 1.89206 14.2222 4.22603V9.43607C14.806 9.39487 15.3992 9.37374 16 9.37374C16.5772 9.37374 17.1474 9.39324 17.709 9.43131V4.22603C17.709 1.89206 19.601 0 21.935 0C24.5798 0 26.5747 2.40193 26.0892 5.00181L24.9456 11.1259C28.8705 12.8395 31.8384 15.8157 31.8384 19.5556V21.8182C31.8384 24.8936 29.8038 27.4686 26.9594 29.2068C24.0928 30.9586 20.2149 32 16 32C11.7851 32 7.90719 30.9586 5.04062 29.2068C2.19624 27.4686 0.161621 24.8936 0.161621 21.8182V19.5556C0.161621 15.8355 3.09899 12.8708 6.99084 11.1538L5.84199 5.00181ZM23.48 11.9305L24.8183 4.76446C25.1552 2.96 23.7707 1.29293 21.935 1.29293C20.3151 1.29293 19.0019 2.60612 19.0019 4.22603V10.8562C18.5774 10.8018 18.1462 10.7586 17.709 10.7274C17.1484 10.6873 16.5782 10.6667 16 10.6667C15.3982 10.6667 14.8049 10.689 14.2222 10.7324C13.785 10.765 13.3537 10.8094 12.9293 10.8651V4.22603C12.9293 2.60612 11.6161 1.29293 9.9962 1.29293C8.16055 1.29293 6.77597 2.96 7.11295 4.76446L8.45562 11.9543C4.25822 13.5135 1.45455 16.3344 1.45455 19.5556V21.8182C1.45455 26.7274 7.96677 30.7071 16 30.7071C24.0332 30.7071 30.5455 26.7274 30.5455 21.8182V19.5556C30.5455 16.318 27.7131 13.4847 23.48 11.9305Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M30.5455 21.8183C30.5455 26.7275 24.0333 30.7072 16 30.7072C7.96681 30.7072 1.45459 26.7275 1.45459 21.8183V19.5557H30.5455V21.8183Z", fill: "#FEDC90" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.11298 4.7645C6.77601 2.96004 8.16058 1.29297 9.99624 1.29297C11.6161 1.29297 12.9293 2.60616 12.9293 4.22607V10.8652C13.9192 10.7351 14.9466 10.6667 16 10.6667C17.0291 10.6667 18.0333 10.732 19.0019 10.8562V4.22607C19.0019 2.60616 20.3151 1.29297 21.935 1.29297C23.7707 1.29297 25.1553 2.96004 24.8183 4.7645L23.4801 11.9306C27.7131 13.4847 30.5455 16.318 30.5455 19.5556C30.5455 24.4648 24.0333 28.4445 16 28.4445C7.96681 28.4445 1.45459 24.4648 1.45459 19.5556C1.45459 16.3345 4.25826 13.5135 8.45566 11.9543L7.11298 4.7645Z", fill: "#D1884F" }),
-        React__default['default'].createElement("path", { d: "M11.9595 18.9091C11.9595 20.248 11.2359 21.3333 10.3433 21.3333C9.45075 21.3333 8.72717 20.248 8.72717 18.9091C8.72717 17.5702 9.45075 16.4849 10.3433 16.4849C11.2359 16.4849 11.9595 17.5702 11.9595 18.9091Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M23.1111 18.9091C23.1111 20.248 22.3875 21.3333 21.4949 21.3333C20.6024 21.3333 19.8788 20.248 19.8788 18.9091C19.8788 17.5702 20.6024 16.4849 21.4949 16.4849C22.3875 16.4849 23.1111 17.5702 23.1111 18.9091Z", fill: "#633001" })));
+        React__default['default'].createElement("image", { href: "data:image/png;base64,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", width: "32" })));
 };
 
 var Icon$r = function (props) {
@@ -432,34 +425,7 @@ var Icon$v = function (props) {
 
 var Icon$w = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("circle", { cx: "45", cy: "45", r: "45", fill: "url(#paint0_linear)" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.7703 49.9442C15.7626 50.1122 15.7587 50.2809 15.7587 50.4501C15.7587 51.0897 15.8144 51.7214 15.923 52.3435H15.7587V53.3228C15.7587 53.8008 15.7898 54.2744 15.8508 54.7428C17.0423 63.8844 29.6377 71.0772 45 71.0772C60.3623 71.0772 72.9577 63.8844 74.1492 54.7428C74.2102 54.2744 74.2413 53.8008 74.2413 53.3228V52.3435H74.077C74.1856 51.7214 74.2413 51.0897 74.2413 50.4501C74.2413 50.2809 74.2374 50.1122 74.2297 49.9442C73.7886 40.3727 60.8709 32.6957 45 32.6957C29.1291 32.6957 16.2114 40.3727 15.7703 49.9442ZM13.3688 49.9442C13.5863 44.1042 17.5547 39.1986 23.0781 35.845C28.8037 32.3686 36.5601 30.2964 45 30.2964C53.4399 30.2964 61.1964 32.3686 66.9219 35.845C72.4453 39.1986 76.4137 44.1042 76.6312 49.9442H76.6406V53.3228C76.6406 59.3853 72.6041 64.4779 66.9219 67.9279C61.1964 71.4043 53.4399 73.4765 45 73.4765C36.5601 73.4765 28.8037 71.4043 23.0781 67.9279C17.3959 64.4779 13.3594 59.3853 13.3594 53.3228V49.9442H13.3688Z", fill: "#606063" }),
-        React__default['default'].createElement("path", { d: "M74.2412 53.3233C74.2412 63.1287 61.1494 71.0776 44.9999 71.0776C28.8503 71.0776 15.7585 63.1287 15.7585 53.3233V50.5127H74.2412V53.3233Z", fill: "#BEBEBE" }),
-        React__default['default'].createElement("path", { d: "M74.2412 50.4502C74.2412 60.2557 61.1494 68.2046 44.9999 68.2046C28.8503 68.2046 15.7585 60.2557 15.7585 50.4502C15.7585 40.6447 28.8503 32.6958 44.9999 32.6958C61.1494 32.6958 74.2412 40.6447 74.2412 50.4502Z", fill: "#FAF9FA" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20.2578 45.4345C20.2577 45.4456 20.2577 45.4567 20.2577 45.4679C20.2577 46.2752 20.3747 47.0659 20.5989 47.8338H20.2574V48.8736C20.2574 49.3326 20.2953 49.7861 20.3691 50.2332C21.4839 56.9839 30.8104 62.2532 42.1508 62.2532C53.4912 62.2532 62.8178 56.9839 63.9326 50.2332C64.0064 49.7861 64.0442 49.3326 64.0442 48.8736V47.8338H63.7032C63.9213 47.0868 64.038 46.3183 64.0442 45.5339C64.0444 45.5119 64.0445 45.4899 64.0445 45.4679C64.0445 45.4567 64.0444 45.4456 64.0444 45.4345C64.015 38.0605 54.2243 32.0883 42.1511 32.0883C30.0779 32.0883 20.2872 38.0605 20.2578 45.4345ZM17.8585 45.4345H17.8582V48.8736C17.8582 53.7204 21.0631 57.7199 25.4188 60.3817C29.8156 63.0687 35.7372 64.6525 42.1508 64.6525C48.5644 64.6525 54.4861 63.0687 58.8829 60.3817C63.2385 57.7199 66.4435 53.7204 66.4435 48.8736V45.5428C66.4437 45.5178 66.4438 45.4928 66.4438 45.4679C66.4438 40.621 63.2388 36.6216 58.8832 33.9598C54.4863 31.2728 48.5647 29.689 42.1511 29.689C35.7375 29.689 29.8158 31.2728 25.419 33.9598C21.0734 36.6155 17.8731 40.6027 17.8585 45.4345Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M64.0441 48.8738C64.0441 56.2631 54.2421 62.2534 42.1507 62.2534C30.0593 62.2534 20.2573 56.2631 20.2573 48.8738V45.7346H64.0441V48.8738Z", fill: "#FEDC90" }),
-        React__default['default'].createElement("path", { d: "M64.0441 45.4679C64.0441 52.8573 54.2421 58.8475 42.1507 58.8475C30.0593 58.8475 20.2573 52.8573 20.2573 45.4679C20.2573 38.0786 30.0593 32.0884 42.1507 32.0884C54.2421 32.0884 64.0441 38.0786 64.0441 45.4679Z", fill: "#D1884F" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M26.8557 38.2365C26.8556 38.2476 26.8556 38.2587 26.8556 38.2699C26.8556 39.0772 26.9726 39.8679 27.1968 40.6359H26.8553V41.6756C26.8553 42.1346 26.8932 42.5881 26.967 43.0352C28.0818 49.7859 37.4083 55.0552 48.7487 55.0552C60.0891 55.0552 69.4157 49.7859 70.5305 43.0352C70.6043 42.5881 70.6421 42.1346 70.6421 41.6756V40.6359H70.3011C70.5192 39.8888 70.6359 39.1203 70.6421 38.3359C70.6423 38.3139 70.6424 38.2919 70.6424 38.2699C70.6424 38.2587 70.6423 38.2476 70.6423 38.2365C70.6129 30.8625 60.8222 24.8903 48.749 24.8903C36.6758 24.8903 26.8851 30.8625 26.8557 38.2365ZM24.4564 38.2365H24.4561V41.6756C24.4561 46.5224 27.661 50.5219 32.0167 53.1837C36.4135 55.8707 42.3351 57.4545 48.7487 57.4545C55.1623 57.4545 61.084 55.8707 65.4808 53.1837C69.8364 50.5219 73.0414 46.5224 73.0414 41.6756V38.3448C73.0416 38.3198 73.0417 38.2948 73.0417 38.2699C73.0417 33.4231 69.8367 29.4236 65.4811 26.7618C61.0842 24.0748 55.1626 22.491 48.749 22.491C42.3354 22.491 36.4137 24.0748 32.0169 26.7618C27.6713 29.4175 24.471 33.4047 24.4564 38.2365Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M70.6422 41.6758C70.6422 49.0651 60.8402 55.0554 48.7488 55.0554C36.6575 55.0554 26.8555 49.0651 26.8555 41.6758V38.5366H70.6422V41.6758Z", fill: "#FEDC90" }),
-        React__default['default'].createElement("path", { d: "M70.6422 38.2699C70.6422 45.6593 60.8402 51.6495 48.7488 51.6495C36.6575 51.6495 26.8555 45.6593 26.8555 38.2699C26.8555 30.8806 36.6575 24.8904 48.7488 24.8904C60.8402 24.8904 70.6422 30.8806 70.6422 38.2699Z", fill: "#D1884F" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20.2578 31.0385C20.2577 31.0496 20.2577 31.0607 20.2577 31.0719C20.2577 31.8792 20.3747 32.6699 20.5989 33.4379H20.2574V34.4776C20.2574 34.9366 20.2953 35.3901 20.3691 35.8372C21.4839 42.5879 30.8104 47.8572 42.1508 47.8572C53.4912 47.8572 62.8178 42.5879 63.9326 35.8372C64.0064 35.3901 64.0442 34.9366 64.0442 34.4776V33.4379H63.7032C63.9213 32.6908 64.038 31.9223 64.0442 31.1379C64.0444 31.1159 64.0445 31.0939 64.0445 31.0719C64.0445 31.0607 64.0444 31.0496 64.0444 31.0385C64.015 23.6645 54.2243 17.6923 42.1511 17.6923C30.0779 17.6923 20.2872 23.6645 20.2578 31.0385ZM17.8585 31.0385H17.8582V34.4776C17.8582 39.3244 21.0631 43.3239 25.4188 45.9857C29.8156 48.6727 35.7372 50.2565 42.1508 50.2565C48.5644 50.2565 54.4861 48.6727 58.8829 45.9857C63.2385 43.3239 66.4435 39.3244 66.4435 34.4776V31.1468C66.4437 31.1218 66.4438 31.0968 66.4438 31.0719C66.4438 26.2251 63.2388 22.2256 58.8832 19.5638C54.4863 16.8768 48.5647 15.293 42.1511 15.293C35.7375 15.293 29.8158 16.8768 25.419 19.5638C21.0734 22.2195 17.8731 26.2067 17.8585 31.0385Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M64.0441 34.4778C64.0441 41.8671 54.2421 47.8574 42.1507 47.8574C30.0593 47.8574 20.2573 41.8671 20.2573 34.4778V31.3386H64.0441V34.4778Z", fill: "#FEDC90" }),
-        React__default['default'].createElement("path", { d: "M64.0441 31.0719C64.0441 38.4613 54.2421 44.4515 42.1507 44.4515C30.0593 44.4515 20.2573 38.4613 20.2573 31.0719C20.2573 23.6826 30.0593 17.6924 42.1507 17.6924C54.2421 17.6924 64.0441 23.6826 64.0441 31.0719Z", fill: "#D1884F" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.4361 31.9044C25.4361 34.3714 27.2287 36.5809 30.0567 38.0676L28.0973 41.4614L28.0977 41.4617H28.0973V50.0509C28.0973 51.1867 29.018 52.1075 30.1538 52.1075C31.2896 52.1075 32.2104 51.1867 32.2104 50.0509V43.22L34.3184 39.5686C35.6663 39.8545 37.1133 40.0097 38.6192 40.0097C45.9 40.0097 51.8022 36.3808 51.8022 31.9044C51.8022 27.428 45.9 23.7991 38.6192 23.7991C31.3383 23.7991 25.4361 27.428 25.4361 31.9044Z", fill: "url(#paint1_linear)" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M30.0569 38.0676C29.7437 37.9029 29.4431 37.7294 29.1563 37.5476C26.8538 36.0883 25.4363 34.0982 25.4363 31.9045C25.4363 27.428 31.3386 23.7991 38.6194 23.7991C45.9002 23.7991 51.8025 27.428 51.8025 31.9045C51.8025 36.3809 45.9002 40.0098 38.6194 40.0098C37.1135 40.0098 35.6666 39.8545 34.3187 39.5687L32.2106 43.22V50.0509C32.2106 51.1868 31.2899 52.1075 30.1541 52.1075C29.0183 52.1075 28.0975 51.1868 28.0975 50.0509V41.4617L30.0569 38.0676ZM25.9981 41.4978V50.0509C25.9981 52.3462 27.8588 54.2069 30.1541 54.2069C32.4493 54.2069 34.31 52.3462 34.31 50.0509V43.7826L35.4034 41.8887C36.4418 42.0334 37.5181 42.1092 38.6194 42.1092C42.584 42.1092 46.2738 41.1254 49.0408 39.4242C51.7735 37.7441 53.9019 35.1446 53.9019 31.9045C53.9019 28.6643 51.7735 26.0648 49.0408 24.3847C46.2738 22.6835 42.584 21.6997 38.6194 21.6997C34.6548 21.6997 30.965 22.6835 28.198 24.3847C25.4652 26.0648 23.3369 28.6643 23.3369 31.9045C23.3369 34.7481 24.9657 37.0898 27.2286 38.7677L26.2939 40.3867C26.2048 40.5358 26.1337 40.697 26.0835 40.8672C26.0221 41.0746 25.9943 41.2873 25.9981 41.4978Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M29.5544 28.4894C29.5544 30.8083 32.5084 32.6882 36.1524 32.6882C39.7964 32.6882 42.7505 30.8083 42.7505 28.4894C42.7505 26.1704 39.7964 24.2905 36.1524 24.2905C32.5084 24.2905 29.5544 26.1704 29.5544 28.4894Z", fill: "#9E7200" }),
-        React__default['default'].createElement("path", { d: "M29.5547 26.6899H42.7508V28.4894H29.5547V26.6899Z", fill: "#9E7200" }),
-        React__default['default'].createElement("path", { d: "M29.5544 26.6898C29.5544 29.0088 32.5084 30.8887 36.1524 30.8887C39.7964 30.8887 42.7505 29.0088 42.7505 26.6898C42.7505 24.3709 39.7964 22.491 36.1524 22.491C32.5084 22.491 29.5544 24.3709 29.5544 26.6898Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M33.6489 26.1838L35.5086 25.0003C35.9016 24.7502 36.4038 24.7502 36.7968 25.0003L38.6565 26.1838C39.0269 26.4195 39.0269 26.9602 38.6565 27.1959L36.7968 28.3794C36.4038 28.6295 35.9016 28.6295 35.5086 28.3794L33.6489 27.1959C33.2785 26.9602 33.2785 26.4195 33.6489 26.1838Z", fill: "#9E7200" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M30.3599 21.9496C31.9392 20.9446 33.9929 20.3916 36.1525 20.3916C38.3121 20.3916 40.3658 20.9446 41.9451 21.9496C43.4996 22.9389 44.8499 24.5636 44.8499 26.6899V28.4894C44.8499 30.6156 43.4996 32.2404 41.9451 33.2296C40.3658 34.2347 38.3121 34.7876 36.1525 34.7876C33.9929 34.7876 31.9392 34.2347 30.3599 33.2296C28.8054 32.2404 27.4551 30.6156 27.4551 28.4894V26.6899C27.4551 24.5636 28.8054 22.9389 30.3599 21.9496ZM36.1525 22.491C32.5085 22.491 29.5545 24.3709 29.5545 26.6899V28.4894C29.5545 30.8083 32.5085 32.6882 36.1525 32.6882C39.7965 32.6882 42.7505 30.8083 42.7505 28.4894V26.6899C42.7505 24.3709 39.7965 22.491 36.1525 22.491Z", fill: "#633001" }),
-        React__default['default'].createElement("defs", null,
-            React__default['default'].createElement("linearGradient", { id: "paint0_linear", x1: "45", y1: "0", x2: "45", y2: "90", gradientUnits: "userSpaceOnUse" },
-                React__default['default'].createElement("stop", { stopColor: "#54DADE" }),
-                React__default['default'].createElement("stop", { offset: "0.762157", stopColor: "#24C7D6" })),
-            React__default['default'].createElement("linearGradient", { id: "paint1_linear", x1: "38.7618", y1: "24.0704", x2: "38.7618", y2: "51.8948", gradientUnits: "userSpaceOnUse" },
-                React__default['default'].createElement("stop", { stopColor: "#9F4A08" }),
-                React__default['default'].createElement("stop", { offset: "0.370494", stopColor: "#7D3900" }),
-                React__default['default'].createElement("stop", { offset: "1", stopColor: "#8D4104" })))));
+        React__default['default'].createElement("image", { href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAC/VBMVEUAAADb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08seADIeADPb08tCdc8dAC4cACsfBDb/ayoXABUWABAYABnsBQUZAB0aACEbACfa0sobACRBdM0UAAtDeNMAADRJiutGhOMiADb/BQA/ccoBABNFgd5Ee9YAABgBADo/b8dKjvFHh+chDUAbADJJjO7Xz8gRAAEIACEgBzoiADM6bcYeCjMEAB0mG1UrK2kIADX/dSr/cCrqAAI9ZbgaAC/o4dXj29E9ab0sLm0oJV48YbIsMXESAChLkvY/bMI3Up0pJmQXADPnAQFFfdo1TJQnH1wCADNyqf/59OTs5tkwPYIuNHf//+0NADT/++n9+Obx690zRIw5Wag0SI8vOH0jGEkhCT7/figOACUiD0cSADP18OA6Xa02TpklHk8jE0xOm/8nIldMlvv/eywWACxqoP44VqLe184xRIYgEDpQov8iFEMxP4YBAAtOGjFso/9glfBGe9QuFj8tOHT/gy3/bSolF1B4sP///evKwb0vPHs8ETFZjulQhN4pCTH/ky/1BAJLf9nuEwpSqP+6r7F4ZXs+KkwyCTD3NxfyIw9mnPbDubf/jC2wpKhuXXI3H0dUieOpnaKCc4NmVWxUQF7lYSthIjC9US3WXCz//idyAx7RysOLfIv0ayupAxO1q6xtKDB5Ly+zSi3/XiT7Rhp/xP9dTGWENi+mQy1fAiTGBA2dkJlMPFdKMVYPAUCQPS67BBCll5/NVCz6TyCcAxaSho+cQi47ACpNASjnxif/ZCc8IyeHAxugk5yYjJWWh5P82CN2UxnYBAiqhQeMaQjguQBVcsJLY6wNC1//5iE+edhRaLN1Vja6lzGTcy9WOibJowCpqdvJqC28mABXl/V/hcAYN6fq36Gdl5hwZZf/nim8kCAunnoMAAAAI3RSTlMA9A+NG1WY3ytLM2nOQ+eD1npix5/swLGocLWkO6q5dD+srl8b8gUAACLHSURBVHja1JTNa9pgHMd9qa+r06lsULrLjDC6zUEuAUHISYINE3zB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", width: "90" })));
 };
 
 var Icon$x = function (props) {
@@ -1876,9 +1842,12 @@ var Modal = function (_a) {
 };
 var templateObject_1$u, templateObject_2$9, templateObject_3$5;
 
-var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.primary;
+}, function (_a) {
     var show = _a.show;
-    return (show ? 0.6 : 0);
+    return (show ? 0.2 : 0);
 }, function (_a) {
     var zIndex = _a.zIndex;
     return zIndex;
@@ -1948,12 +1917,7 @@ var useModal = function (modal, closeOnOverlayClick) {
 
 var Icon$K = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("g", null,
-            React__default['default'].createElement("rect", { fill: "none", height: "24", width: "24" })),
-        React__default['default'].createElement("g", null,
-            React__default['default'].createElement("g", null,
-                React__default['default'].createElement("path", { d: "M4,9h5c0-1.1-0.9-2-2-2H4C3.45,7,3,7.45,3,8C3,8.55,3.45,9,4,9z" }),
-                React__default['default'].createElement("path", { d: "M22,14.06V8c0-1.1-0.9-2-2-2h-6.29l-1.06-1.06l1.41-1.41l-0.71-0.71L9.82,6.35l0.71,0.71l1.41-1.41L13,6.71V9 c0,1.1-0.9,2-2,2H8.96c-0.22-0.16-0.45-0.3-0.69-0.43l-0.4,0.89l-0.46-0.21l0.4-0.9C7.26,10.13,6.64,10,6,10 c-0.53,0-1.04,0.11-1.52,0.26l0.34,0.91l-0.47,0.18L4,10.42c-1.06,0.46-1.91,1.28-2.43,2.31l0.89,0.4l-0.21,0.46l-0.9-0.4 C1.13,13.74,1,14.36,1,15c0,0.53,0.11,1.04,0.26,1.52l0.91-0.34l0.18,0.47L1.42,17c0.46,1.06,1.28,1.91,2.31,2.43l0.4-0.89 l0.46,0.21l-0.4,0.9C4.74,19.87,5.36,20,6,20c0.53,0,1.04-0.11,1.52-0.26l-0.34-0.91l0.47-0.18L8,19.58 c1.06-0.46,1.91-1.28,2.43-2.31l-0.89-0.4l0.21-0.46l0.9,0.4c0.1-0.26,0.18-0.54,0.24-0.82h5.16C16.03,16.16,16,16.33,16,16.5 c0,1.93,1.57,3.5,3.5,3.5s3.5-1.57,3.5-3.5C23,15.55,22.62,14.69,22,14.06z M6,18c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3 S7.66,18,6,18z M10.87,14c-0.04-0.18-0.08-0.35-0.13-0.52l-0.91,0.34l-0.18-0.47L10.58,13c0,0,0.42,0,0.42,0c2.21,0,4-1.79,4-4V8 h5v5.05C19.84,13.03,19.67,13,19.5,13c-0.95,0-1.81,0.38-2.44,1H10.87z M19.5,18c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5 s1.5,0.67,1.5,1.5S20.33,18,19.5,18z" })))));
+        React__default['default'].createElement("path", { d: "M13.3 2.79L9.8 6.29L10.5 7L11.9 5.61L13 6.71V9C13 10.11 12.11 11 11 11H10.46A6 6 0 0 1 12 15A6 6 0 0 1 11.91 16H15.03A4.5 4.5 0 0 1 19.5 12A4.5 4.5 0 0 1 22 12.76V8C22 6.89 21.11 6 20 6H13.71L12.61 4.9L14 3.5L13.3 2.79M4 7C3.45 7 3 7.45 3 8C3 8.55 3.45 9 4 9H9C9 7.9 8.11 7 7 7H4M6 10A5 5 0 0 0 4.44 10.25L4.8 11.18L4.33 11.36L4 10.43A5 5 0 0 0 1.54 12.74L2.45 13.15L2.24 13.6L1.34 13.2A5 5 0 0 0 1 15A5 5 0 0 0 1.25 16.56L2.18 16.2L2.36 16.67L1.43 17A5 5 0 0 0 3.74 19.46L4.14 18.55L4.6 18.76L4.2 19.66A5 5 0 0 0 6 20A5 5 0 0 0 7.56 19.75L7.2 18.82L7.67 18.64L8 19.57A5 5 0 0 0 10.46 17.26L9.55 16.86L9.76 16.4L10.66 16.8A5 5 0 0 0 11 15A5 5 0 0 0 10.75 13.44L9.82 13.8L9.64 13.33L10.57 13A5 5 0 0 0 8.26 10.54L7.86 11.45L7.4 11.24L7.8 10.34A5 5 0 0 0 6 10M6 12A3 3 0 0 1 9 15A3 3 0 0 1 6 18A3 3 0 0 1 3 15A3 3 0 0 1 6 12M19.5 13A3.5 3.5 0 0 0 16 16.5A3.5 3.5 0 0 0 19.5 20A3.5 3.5 0 0 0 23 16.5A3.5 3.5 0 0 0 19.5 13M19.5 15A1.5 1.5 0 0 1 21 16.5A1.5 1.5 0 0 1 19.5 18A1.5 1.5 0 0 1 18 16.5A1.5 1.5 0 0 1 19.5 15Z" })));
 };
 
 var Icon$L = function (props) {
@@ -1973,47 +1937,29 @@ var Icon$N = function (props) {
 
 var Icon$O = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" })));
+        React__default['default'].createElement("path", { d: "M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" })));
 };
 
 var Icon$P = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M21.9 8.89L20.85 4.52C20.63 3.62 19.85 3 18.94 3H16.73H14.72H13H11H9.28001H7.26001H5.05001C4.15001 3 3.36001 3.63 3.15001 4.52L2.10001 8.89C1.86001 9.91 2.08001 10.95 2.72001 11.77C2.80001 11.88 2.91001 11.96 3.00001 12.06V19C3.00001 20.1 3.90001 21 5.00001 21H19C20.1 21 21 20.1 21 19V12.06C21.09 11.97 21.2 11.88 21.28 11.78C21.92 10.96 22.15 9.91 21.9 8.89ZM7.02001 5L6.44001 9.86C6.36001 10.51 5.84001 11 5.23001 11C4.74001 11 4.43001 10.71 4.30001 10.53C4.04001 10.2 3.95001 9.77 4.05001 9.36L5.05001 5H7.02001ZM18.91 4.99L19.96 9.36C20.06 9.78 19.97 10.2 19.71 10.53C19.57 10.71 19.27 11 18.77 11C18.16 11 17.63 10.51 17.56 9.86L16.98 5L18.91 4.99ZM15.51 9.52C15.56 9.91 15.44 10.3 15.18 10.59C14.95 10.85 14.63 11 14.22 11C13.55 11 13 10.41 13 9.69V5H14.96L15.51 9.52ZM11 9.69C11 10.41 10.45 11 9.71001 11C9.37001 11 9.06001 10.85 8.82001 10.59C8.57001 10.3 8.45001 9.91 8.49001 9.52L9.04001 5H11V9.69ZM18 19H6.00001C5.45001 19 5.00001 18.55 5.00001 18V12.97C5.08001 12.98 5.15001 13 5.23001 13C6.10001 13 6.89001 12.64 7.47001 12.05C8.07001 12.65 8.87001 13 9.78001 13C10.65 13 11.43 12.64 12.01 12.07C12.6 12.64 13.4 13 14.3 13C15.14 13 15.94 12.65 16.54 12.05C17.12 12.64 17.91 13 18.78 13C18.86 13 18.93 12.98 19.01 12.97V18C19 18.55 18.55 19 18 19Z" })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
+        React__default['default'].createElement("path", { d: "M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M19.22 4C19.5 4 19.75 4 19.96 4.05C20.13 5.44 19.94 8.3 16.66 11.58C14.96 13.29 12.93 14.6 10.65 15.47L8.5 13.37C9.42 11.06 10.73 9.03 12.42 7.34C15.18 4.58 17.64 4 19.22 4M19.22 2C17.24 2 14.24 2.69 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.62 17.27 10.13 17.5 10.66 17.5C10.89 17.5 11.13 17.44 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39S20.7 2 19.22 2M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z" })));
 };
 
 var Icon$Q = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7V18C3 19.1046 3.89543 20 5 20H20C20.5523 20 21 19.5523 21 19C21 18.4477 20.5523 18 20 18H5V7Z" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19 17H7C6.44772 17 6 16.5523 6 16V12C6 11.4477 6.44772 11 7 11H10V10C10 9.44772 10.4477 9 11 9H14V7C14 6.44772 14.4477 6 15 6H19C19.5523 6 20 6.44772 20 7V16C20 16.5523 19.5523 17 19 17ZM16 8H18V15H16V8ZM12 15H14V11H12V15ZM10 13H8V15H10V13Z" })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
+        React__default['default'].createElement("path", { d: "M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z" })));
 };
 
 var Icon$R = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" })));
+        React__default['default'].createElement("path", { d: "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" })));
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    var textColor = isDark ? "#FFFFFF" : "#000000";
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
-        React__default['default'].createElement("path", { d: "M30.8524 19.7569C30.4803 19.7569 30.2173 19.6799 30.0633 19.5259C29.9221 19.372 29.8516 19.1282 29.8516 18.7946V7.65066C29.8516 7.31705 29.9285 7.07326 30.0825 6.91928C30.2365 6.75248 30.4931 6.66907 30.8524 6.66907H35.5679C37.3642 6.66907 38.6858 7.04759 39.5327 7.80463C40.3796 8.56167 40.803 9.69082 40.803 11.1921C40.803 12.6805 40.3796 13.8032 39.5327 14.5603C38.6987 15.3045 37.3771 15.6766 35.5679 15.6766H33.7394V18.7946C33.7394 19.1282 33.6624 19.372 33.5085 19.5259C33.3545 19.6799 33.0914 19.7569 32.7193 19.7569H30.8524ZM35.2599 12.8858C35.786 12.8858 36.1902 12.7446 36.4725 12.4624C36.7676 12.1801 36.9151 11.7566 36.9151 11.1921C36.9151 10.6147 36.7676 10.1848 36.4725 9.90253C36.1902 9.62025 35.786 9.47911 35.2599 9.47911H33.7394V12.8858H35.2599Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M45.3484 20.0456C44.1423 20.0456 43.1735 19.6607 42.4421 18.8908C41.7236 18.1081 41.3643 17.011 41.3643 15.5996C41.3643 14.5218 41.6081 13.5787 42.0957 12.7703C42.5961 11.9619 43.2954 11.3396 44.1936 10.9034C45.1046 10.4543 46.1503 10.2297 47.3308 10.2297C48.306 10.2297 49.1657 10.3388 49.9099 10.5569C50.6669 10.7622 51.3598 11.0638 51.9885 11.4615V19.1602C51.9885 19.404 51.9436 19.5644 51.8538 19.6414C51.764 19.7184 51.5844 19.7569 51.3149 19.7569H49.3517C49.2106 19.7569 49.1015 19.7376 49.0245 19.6992C48.9475 19.6478 48.8834 19.5708 48.8321 19.4682L48.5819 18.8908C48.2097 19.2886 47.7607 19.5773 47.2346 19.7569C46.7213 19.9494 46.0926 20.0456 45.3484 20.0456ZM46.7919 17.428C47.2923 17.428 47.6837 17.3061 47.966 17.0623C48.2482 16.8186 48.3894 16.4721 48.3894 16.023V13.0205C48.1456 12.905 47.8376 12.8473 47.4655 12.8473C46.7855 12.8473 46.2402 13.0847 45.8296 13.5594C45.4318 14.0342 45.2329 14.7014 45.2329 15.5611C45.2329 16.8057 45.7526 17.428 46.7919 17.428Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M54.667 19.7569C54.2949 19.7569 54.0319 19.6799 53.8779 19.5259C53.7239 19.372 53.6469 19.1282 53.6469 18.7946V11.1151C53.6469 10.8841 53.6854 10.7301 53.7624 10.6532C53.8522 10.5633 54.0318 10.5184 54.3013 10.5184H56.2837C56.4377 10.5184 56.5532 10.5441 56.6302 10.5954C56.72 10.6339 56.7713 10.7109 56.7841 10.8264L56.8804 11.4038C57.2397 11.0445 57.708 10.7622 58.2854 10.5569C58.8756 10.3388 59.53 10.2297 60.2486 10.2297C61.2879 10.2297 62.1283 10.5248 62.7699 11.1151C63.4115 11.6925 63.7322 12.5522 63.7322 13.6942V18.7946C63.7322 19.1282 63.6552 19.372 63.5013 19.5259C63.3601 19.6799 63.1035 19.7569 62.7314 19.7569H60.8645C60.4924 19.7569 60.2229 19.6799 60.0561 19.5259C59.9021 19.372 59.8251 19.1282 59.8251 18.7946V13.9444C59.8251 13.5594 59.7417 13.2836 59.5749 13.1167C59.4081 12.9499 59.1451 12.8665 58.7858 12.8665C58.4009 12.8665 58.0929 12.9692 57.862 13.1745C57.6438 13.3798 57.5348 13.6621 57.5348 14.0213V18.7946C57.5348 19.1282 57.4578 19.372 57.3038 19.5259C57.1627 19.6799 56.906 19.7569 56.5339 19.7569H54.667Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M70.5354 20.0456C68.739 20.0456 67.3532 19.6286 66.3781 18.7946C65.4029 17.9605 64.9153 16.748 64.9153 15.1569C64.9153 14.1817 65.1399 13.322 65.5889 12.5778C66.038 11.8336 66.686 11.2562 67.5329 10.8456C68.3926 10.435 69.4062 10.2297 70.5739 10.2297C71.4592 10.2297 72.2034 10.3131 72.8065 10.4799C73.4224 10.6467 73.9677 10.9034 74.4425 11.2498C74.5836 11.3396 74.6542 11.4551 74.6542 11.5963C74.6542 11.6989 74.6029 11.8336 74.5002 12.0004L73.7111 13.367C73.6213 13.5466 73.5122 13.6364 73.3839 13.6364C73.3069 13.6364 73.185 13.5851 73.0182 13.4824C72.6718 13.2643 72.3446 13.1039 72.0366 13.0013C71.7415 12.8986 71.3694 12.8473 70.9203 12.8473C70.2787 12.8473 69.7591 13.0526 69.3613 13.4632C68.9764 13.8738 68.7839 14.4384 68.7839 15.1569C68.7839 15.8883 68.9828 16.4529 69.3806 16.8506C69.7783 17.2356 70.3237 17.428 71.0165 17.428C71.4271 17.428 71.7992 17.3703 72.1329 17.2548C72.4665 17.1393 72.8065 16.9789 73.1529 16.7736C73.3326 16.671 73.4609 16.6197 73.5379 16.6197C73.6534 16.6197 73.756 16.7095 73.8458 16.8891L74.7119 18.3711C74.7761 18.4994 74.8082 18.6021 74.8082 18.6791C74.8082 18.7946 74.7312 18.9036 74.5772 19.0063C74.0383 19.3527 73.4481 19.6093 72.8065 19.7761C72.1778 19.9558 71.4207 20.0456 70.5354 20.0456Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M79.6881 20.0456C78.482 20.0456 77.5132 19.6607 76.7819 18.8908C76.0633 18.1081 75.704 17.011 75.704 15.5996C75.704 14.5218 75.9478 13.5787 76.4354 12.7703C76.9358 11.9619 77.6351 11.3396 78.5333 10.9034C79.4443 10.4543 80.4901 10.2297 81.6705 10.2297C82.6457 10.2297 83.5054 10.3388 84.2496 10.5569C85.0067 10.7622 85.6995 11.0638 86.3283 11.4615V19.1602C86.3283 19.404 86.2834 19.5644 86.1935 19.6414C86.1037 19.7184 85.9241 19.7569 85.6546 19.7569H83.6915C83.5503 19.7569 83.4412 19.7376 83.3643 19.6992C83.2873 19.6478 83.2231 19.5708 83.1718 19.4682L82.9216 18.8908C82.5495 19.2886 82.1004 19.5773 81.5743 19.7569C81.0611 19.9494 80.4323 20.0456 79.6881 20.0456ZM81.1316 17.428C81.632 17.428 82.0234 17.3061 82.3057 17.0623C82.588 16.8186 82.7291 16.4721 82.7291 16.023V13.0205C82.4853 12.905 82.1774 12.8473 81.8053 12.8473C81.1252 12.8473 80.5799 13.0847 80.1693 13.5594C79.7715 14.0342 79.5726 14.7014 79.5726 15.5611C79.5726 16.8057 80.0923 17.428 81.1316 17.428Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M98.4184 19.0255C98.5082 19.1282 98.5531 19.2436 98.5531 19.372C98.5531 19.4874 98.5146 19.5837 98.4377 19.6607C98.3607 19.7248 98.258 19.7569 98.1297 19.7569H95.1465C94.9668 19.7569 94.8321 19.7441 94.7423 19.7184C94.6653 19.6799 94.5819 19.6093 94.4921 19.5067L91.8745 15.946V18.7946C91.8745 19.1282 91.7975 19.372 91.6435 19.5259C91.4896 19.6799 91.2265 19.7569 90.8544 19.7569H88.9875C88.6154 19.7569 88.3523 19.6799 88.1984 19.5259C88.0572 19.372 87.9866 19.1282 87.9866 18.7946V7.65066C87.9866 7.31705 88.0636 7.07326 88.2176 6.91928C88.3716 6.75248 88.6282 6.66907 88.9875 6.66907H90.8544C91.2265 6.66907 91.4896 6.75248 91.6435 6.91928C91.7975 7.07326 91.8745 7.31705 91.8745 7.65066V14.0983L94.4151 10.7879C94.4921 10.6852 94.5755 10.6147 94.6653 10.5762C94.7551 10.5377 94.8898 10.5184 95.0695 10.5184H98.0527C98.181 10.5184 98.2773 10.5569 98.3414 10.6339C98.4184 10.6981 98.4569 10.7879 98.4569 10.9034C98.4569 11.0317 98.412 11.1472 98.3222 11.2498L95.031 15.0222L98.4184 19.0255Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M104.668 20.0456C103.59 20.0456 102.628 19.866 101.781 19.5067C100.947 19.1474 100.286 18.6085 99.7985 17.89C99.3109 17.1714 99.0671 16.2925 99.0671 15.2531C99.0671 13.6236 99.529 12.379 100.453 11.5193C101.377 10.6596 102.705 10.2297 104.437 10.2297C106.131 10.2297 107.414 10.6532 108.286 11.5C109.172 12.334 109.614 13.4953 109.614 14.9837C109.614 15.6252 109.332 15.946 108.767 15.946H102.724C102.724 16.4978 102.929 16.9212 103.34 17.2163C103.763 17.5114 104.398 17.659 105.245 17.659C105.771 17.659 106.208 17.6141 106.554 17.5243C106.913 17.4216 107.273 17.2741 107.632 17.0816C107.786 17.0174 107.889 16.9854 107.94 16.9854C108.055 16.9854 108.152 17.0623 108.229 17.2163L108.883 18.4481C108.947 18.5764 108.979 18.6727 108.979 18.7368C108.979 18.8523 108.902 18.9614 108.748 19.064C108.222 19.4105 107.626 19.6607 106.958 19.8146C106.291 19.9686 105.528 20.0456 104.668 20.0456ZM106.15 14.0406C106.15 13.553 106.009 13.1745 105.726 12.905C105.444 12.6356 105.021 12.5009 104.456 12.5009C103.892 12.5009 103.462 12.642 103.167 12.9243C102.872 13.1937 102.724 13.5658 102.724 14.0406H106.15Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M116.211 20.0456C115.133 20.0456 114.113 19.9365 113.151 19.7184C112.189 19.4874 111.412 19.1667 110.822 18.7561C110.604 18.6149 110.495 18.4674 110.495 18.3134C110.495 18.2107 110.533 18.1017 110.61 17.9862L111.553 16.4849C111.656 16.331 111.759 16.254 111.861 16.254C111.926 16.254 112.035 16.2989 112.189 16.3887C112.663 16.6582 113.202 16.8763 113.805 17.0431C114.408 17.2099 115.005 17.2933 115.595 17.2933C116.198 17.2933 116.641 17.2035 116.923 17.0238C117.218 16.8442 117.366 16.5555 117.366 16.1577C117.366 15.7728 117.206 15.4713 116.885 15.2531C116.577 15.035 115.993 14.7591 115.133 14.4255C113.837 13.9379 112.824 13.3926 112.092 12.7896C111.374 12.1737 111.015 11.3396 111.015 10.2875C111.015 9.01718 111.47 8.04843 112.381 7.38121C113.292 6.71398 114.505 6.38037 116.019 6.38037C117.071 6.38037 117.969 6.47661 118.713 6.66907C119.47 6.84871 120.112 7.131 120.638 7.51593C120.856 7.68274 120.965 7.83671 120.965 7.97786C120.965 8.06767 120.927 8.17032 120.85 8.2858L119.907 9.78705C119.791 9.94103 119.688 10.018 119.599 10.018C119.534 10.018 119.425 9.97311 119.271 9.88329C118.527 9.3957 117.642 9.15191 116.615 9.15191C116.064 9.15191 115.64 9.24173 115.345 9.42137C115.05 9.601 114.902 9.89612 114.902 10.3067C114.902 10.589 114.979 10.82 115.133 10.9996C115.287 11.1792 115.493 11.3396 115.749 11.4808C116.019 11.6091 116.429 11.7759 116.981 11.9812L117.347 12.1159C118.296 12.488 119.04 12.8473 119.579 13.1937C120.131 13.5273 120.548 13.9444 120.83 14.4448C121.113 14.9324 121.254 15.5483 121.254 16.2925C121.254 17.4344 120.824 18.3455 119.964 19.0255C119.117 19.7056 117.866 20.0456 116.211 20.0456Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M125.343 19.7569C125.151 19.7569 125.003 19.7248 124.9 19.6607C124.798 19.5965 124.721 19.4682 124.67 19.2757L122.187 10.9611C122.161 10.8841 122.148 10.8264 122.148 10.7879C122.148 10.6083 122.277 10.5184 122.533 10.5184H125.074C125.241 10.5184 125.362 10.5505 125.439 10.6147C125.516 10.666 125.568 10.7558 125.593 10.8841L126.633 15.2531L127.941 11.731C128.006 11.577 128.07 11.4744 128.134 11.423C128.211 11.3589 128.339 11.3268 128.519 11.3268H129.731C129.911 11.3268 130.033 11.3589 130.097 11.423C130.174 11.4744 130.245 11.577 130.309 11.731L131.598 15.2531L132.657 10.8841C132.695 10.7558 132.747 10.666 132.811 10.6147C132.875 10.5505 132.991 10.5184 133.157 10.5184H135.717C135.974 10.5184 136.102 10.6083 136.102 10.7879C136.102 10.8264 136.089 10.8841 136.064 10.9611L133.562 19.2757C133.51 19.4682 133.433 19.5965 133.331 19.6607C133.241 19.7248 133.1 19.7569 132.907 19.7569H131.021C130.841 19.7569 130.707 19.7248 130.617 19.6607C130.527 19.5837 130.45 19.4554 130.386 19.2757L129.116 15.7921L127.845 19.2757C127.794 19.4554 127.717 19.5837 127.614 19.6607C127.524 19.7248 127.39 19.7569 127.21 19.7569H125.343Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M140.981 20.0456C139.775 20.0456 138.806 19.6607 138.075 18.8908C137.356 18.1081 136.997 17.011 136.997 15.5996C136.997 14.5218 137.241 13.5787 137.728 12.7703C138.229 11.9619 138.928 11.3396 139.826 10.9034C140.737 10.4543 141.783 10.2297 142.963 10.2297C143.938 10.2297 144.798 10.3388 145.542 10.5569C146.299 10.7622 146.992 11.0638 147.621 11.4615V19.1602C147.621 19.404 147.576 19.5644 147.486 19.6414C147.396 19.7184 147.217 19.7569 146.947 19.7569H144.984C144.843 19.7569 144.734 19.7376 144.657 19.6992C144.58 19.6478 144.516 19.5708 144.465 19.4682L144.214 18.8908C143.842 19.2886 143.393 19.5773 142.867 19.7569C142.354 19.9494 141.725 20.0456 140.981 20.0456ZM142.424 17.428C142.925 17.428 143.316 17.3061 143.598 17.0623C143.881 16.8186 144.022 16.4721 144.022 16.023V13.0205C143.778 12.905 143.47 12.8473 143.098 12.8473C142.418 12.8473 141.873 13.0847 141.462 13.5594C141.064 14.0342 140.865 14.7014 140.865 15.5611C140.865 16.8057 141.385 17.428 142.424 17.428Z", fill: textColor }),
-        React__default['default'].createElement("path", { d: "M150.28 23.6447C149.908 23.6447 149.645 23.5678 149.491 23.4138C149.35 23.2598 149.279 23.016 149.279 22.6824V11.654C149.857 11.2434 150.582 10.9034 151.454 10.6339C152.327 10.3645 153.238 10.2297 154.187 10.2297C158.062 10.2297 160 11.8721 160 15.1569C160 16.6453 159.589 17.8322 158.768 18.7176C157.947 19.6029 156.786 20.0456 155.284 20.0456C154.861 20.0456 154.45 19.9943 154.053 19.8916C153.668 19.789 153.347 19.6478 153.09 19.4682V22.6824C153.09 23.016 153.013 23.2598 152.859 23.4138C152.705 23.5678 152.442 23.6447 152.07 23.6447H150.28ZM154.457 17.4473C155.009 17.4473 155.419 17.242 155.689 16.8314C155.971 16.408 156.112 15.8434 156.112 15.1377C156.112 14.3036 155.945 13.7198 155.612 13.3862C155.291 13.0398 154.79 12.8665 154.11 12.8665C153.674 12.8665 153.328 12.9243 153.071 13.0398V16.1C153.071 16.5363 153.193 16.8699 153.437 17.1008C153.681 17.3318 154.021 17.4473 154.457 17.4473Z", fill: textColor }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.38998 4.50033C4.01476 2.49106 5.55649 0.634766 7.60049 0.634766C9.40427 0.634766 10.8665 2.09701 10.8665 3.90078V7.92728C11.3177 7.89544 11.7761 7.87911 12.2404 7.87911C12.6865 7.87911 13.1272 7.89418 13.5612 7.9236V3.90078C13.5612 2.09701 15.0234 0.634766 16.8272 0.634766C18.8712 0.634766 20.4129 2.49106 20.0377 4.50033L19.1539 9.23326C22.1872 10.5576 24.4809 12.8577 24.4809 15.748V17.4966C24.4809 19.8734 22.9085 21.8634 20.7102 23.2068C18.4948 24.5606 15.4978 25.3654 12.2404 25.3654C8.98304 25.3654 5.98604 24.5606 3.77065 23.2068C1.57242 21.8634 0 19.8734 0 17.4966V15.748C0 12.873 2.2701 10.5817 5.27785 9.25477L4.38998 4.50033ZM18.0212 9.85508L19.0555 4.3169C19.3159 2.92236 18.2459 1.63399 16.8272 1.63399C15.5753 1.63399 14.5604 2.64886 14.5604 3.90078V9.02479C14.2324 8.98273 13.8991 8.9494 13.5612 8.92524C13.128 8.89426 12.6873 8.87833 12.2404 8.87833C11.7753 8.87833 11.3168 8.89559 10.8665 8.92912C10.5286 8.95429 10.1953 8.98862 9.86729 9.03169V3.90078C9.86729 2.64886 8.85241 1.63399 7.60049 1.63399C6.18184 1.63399 5.11179 2.92235 5.37222 4.3169L6.40988 9.87345C3.16599 11.0784 0.999219 13.2586 0.999219 15.748V17.4966C0.999219 21.2906 6.03208 24.3662 12.2404 24.3662C18.4488 24.3662 23.4817 21.2906 23.4817 17.4966V15.748C23.4817 13.2458 21.2927 11.0562 18.0212 9.85508Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M23.4815 17.4967C23.4815 21.2907 18.4486 24.3663 12.2402 24.3663C6.03189 24.3663 0.999023 21.2907 0.999023 17.4967V15.748H23.4815V17.4967Z", fill: "#FEDC90" }),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.37202 4.31671C5.1116 2.92216 6.18164 1.63379 7.6003 1.63379C8.85222 1.63379 9.8671 2.64867 9.8671 3.90059V9.0315C10.6321 8.93102 11.4261 8.87813 12.2402 8.87813C13.0356 8.87813 13.8116 8.9286 14.5602 9.02459V3.90059C14.5602 2.64867 15.5751 1.63379 16.827 1.63379C18.2457 1.63379 19.3157 2.92216 19.0553 4.31671L18.021 9.85488C21.2925 11.056 23.4815 13.2457 23.4815 15.7478C23.4815 19.5418 18.4486 22.6174 12.2402 22.6174C6.03189 22.6174 0.999023 19.5418 0.999023 15.7478C0.999023 13.2584 3.16579 11.0782 6.40968 9.87326L5.37202 4.31671Z", fill: "#D1884F" }),
-        React__default['default'].createElement("path", { d: "M9.11817 15.2485C9.11817 16.2833 8.55896 17.1221 7.86914 17.1221C7.17932 17.1221 6.62012 16.2833 6.62012 15.2485C6.62012 14.2138 7.17932 13.375 7.86914 13.375C8.55896 13.375 9.11817 14.2138 9.11817 15.2485Z", fill: "#633001" }),
-        React__default['default'].createElement("path", { d: "M17.7363 15.2485C17.7363 16.2833 17.1771 17.1221 16.4873 17.1221C15.7975 17.1221 15.2383 16.2833 15.2383 15.2485C15.2383 14.2138 15.7975 13.375 16.4873 13.375C17.1771 13.375 17.7363 14.2138 17.7363 15.2485Z", fill: "#633001" })));
+    _a.isDark; var props = __rest(_a, ["isDark"]);
+    // const textColor = isDark ? "#FFFFFF" : "#000000";
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 174 26" }, props),
+        React__default['default'].createElement("image", { href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAAaCAMAAAAZiZe/AAAC91BMVEUAAAD///////////////////////////////////////////////////////////////////3///////////////7///////////////3///r///r//////////////////////////////////////////////////////////////vz///////////////////////////////////////////////////////////////////////////////////////////////////////////////v///3////8+vX///////////////////////////////////////3//////////vqJfYj////m39b////////9+ej+++n//vmmm6C4rqq+tK65sa3EubDMx7n///+6tK/Px7v////////x59b//uv9+uj/////++r//u6CcHKWhYGypqKYh4i/trW+t7KtpqfPx7ypnpPp49nRybnh3dHy79/Ry8X//+zUyr/9+ubs6Nrh18nk3dD+9uDv6tz58eT//+769OT58+T///8AAAADABUBAA0fAzAzSpEeBzgrL2gnJVogDj8GACAZAB0XABRSm/1DdMkvPn0XGU0iGEUfF0AEADkcASkWAScRAiMTAAsAAAdDe9g4Xqw7Xp43UJksN28pKV0kHUsFBEoiEkQQBzocDjYCAS8dBSwAACZ4xf9KheRFes5Bbb49ZrU5YbM6Yq0kMXcuOHZoWGhSQFpTQVUlJVE8KkojGEkaDkUaAyIRAAFfpP5MkPVZlOxVjuk3WaSdlJswS5uOipAwRIouQn9+cn4vQXhzZnMsMm5zXmcQH2MpJGAhLF82M11VS1o9NlElHlECDlEeFU4oFk0vHkMfFjaBbSgTABoNAABuwP9Tqv9spPpLhdU+ddVKdLsrUKVLZ6Q8VJuOhIJMV3BLSGlfUGZsdV5ERFKKjktIPktSM0UpEzd7cjUrJzWslikgGyNdQx4eABsyFhMIAAH8F1ZUAAAAi3RSTlMAgP3dNyheSs+ORzsuCQLwuRXy2J53UduHQx8ZB/jp49XSzcfDs3RqMiISDfrtta6opaKZlnxxblRAPTT05eHLvZB5WVhENisdGhjfxcCvq5tmYk4mFgsF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", width: "174" })));
 };
 
 var Icon$S = function (props) {
@@ -2024,8 +1970,7 @@ var Icon$S = function (props) {
 
 var Icon$T = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" })));
+        React__default['default'].createElement("path", { d: "M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" })));
 };
 
 var Icon$U = function (props) {
@@ -2035,10 +1980,7 @@ var Icon$U = function (props) {
 
 var Icon$V = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("g", null,
-            React__default['default'].createElement("rect", { fill: "none", height: "24", width: "24" })),
-        React__default['default'].createElement("g", null,
-            React__default['default'].createElement("path", { d: "M6.05,8.05c-2.73,2.73-2.73,7.17,0,9.9C7.42,19.32,9.21,20,11,20s3.58-0.68,4.95-2.05C19.43,14.47,20,4,20,4 S9.53,4.57,6.05,8.05z M14.54,16.54C13.59,17.48,12.34,18,11,18c-0.89,0-1.73-0.25-2.48-0.68c0.92-2.88,2.62-5.41,4.88-7.32 c-2.63,1.36-4.84,3.46-6.37,6c-1.48-1.96-1.35-4.75,0.44-6.54C9.21,7.72,14.04,6.65,17.8,6.2C17.35,9.96,16.28,14.79,14.54,16.54z" }))));
+        React__default['default'].createElement("path", { d: "M17.2,5V5C17.8,5 18.4,5 18.9,5.1C19.1,7.4 19.1,12 16.4,15.2C14.4,17.7 11,19 6.4,19C6,19 5.5,19 5.1,19C4.9,14.4 5.8,10.8 7.9,8.5C10.4,5.6 14.4,5 17.2,5M17.2,3C11.7,3 1.6,5.1 3.2,20.8C4.3,20.9 5.4,21 6.4,21C24.3,21 20.7,3.3 20.7,3.3C20.7,3.3 19.3,3 17.2,3M17,7C7,7 7,17 7,17C11,9 17,7 17,7Z" })));
 };
 
 var Icon$W = function (props) {
@@ -2049,35 +1991,47 @@ var Icon$W = function (props) {
 
 var Icon$X = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M12 3C7.02985 3 3 7.02985 3 11.9904C3 16.9606 7.02985 21 12 21C16.9701 21 21 16.9606 21 11.9904C21 7.02985 16.9701 3 12 3ZM16.4328 8.65139C16.3753 9.48614 14.8305 15.7228 14.8305 15.7228C14.8305 15.7228 14.7345 16.0874 14.3987 16.097C14.2836 16.097 14.1301 16.0874 13.9574 15.9243C13.6023 15.6269 12.7964 15.0512 12.0384 14.5235C12.0096 14.5522 11.9808 14.581 11.9424 14.6098C11.7697 14.7633 11.5107 14.984 11.2324 15.2527C11.1269 15.3486 11.0117 15.4542 10.8966 15.5693L10.887 15.5789C10.8198 15.6461 10.7623 15.694 10.7143 15.7324C10.3401 16.0394 10.3017 15.7804 10.3017 15.6461L10.5032 13.4488V13.4296L10.5128 13.4104C10.5224 13.3817 10.5416 13.3721 10.5416 13.3721C10.5416 13.3721 14.4659 9.87953 14.5714 9.50533C14.581 9.48614 14.5522 9.46695 14.5043 9.48614C14.2452 9.57249 9.72601 12.4318 9.22708 12.7484C9.19829 12.7676 9.11194 12.758 9.11194 12.758L6.91471 12.0384C6.91471 12.0384 6.65565 11.9328 6.742 11.693C6.76119 11.645 6.78998 11.597 6.89552 11.5299C7.38486 11.1844 15.8955 8.12367 15.8955 8.12367C15.8955 8.12367 16.1354 8.04691 16.2793 8.09488C16.3465 8.12367 16.3849 8.15245 16.4232 8.2484C16.4328 8.28678 16.4424 8.36354 16.4424 8.44989C16.4424 8.49787 16.4328 8.55544 16.4328 8.65139Z" })));
+        React__default['default'].createElement("path", { d: "m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" })));
 };
 
 var Icon$Y = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.3137 3L15.2631 3.94934C14.5597 5.19866 14.7398 6.81097 15.8032 7.87441C16.8667 8.93786 18.479 9.11792 19.7283 8.4146L20.6777 9.36396L17.6569 12.3848L17.1287 11.8566C16.7382 11.4661 16.105 11.4661 15.7145 11.8566C15.3239 12.2471 15.3239 12.8803 15.7145 13.2708L16.2426 13.799L9.36396 20.6777L8.49923 19.8129C9.71921 18.5286 9.69924 16.4983 8.43932 15.2384C7.1794 13.9784 5.14908 13.9585 3.86473 15.1784L3 14.3137L9.87868 7.43503L10.2145 7.77081C10.605 8.16134 11.2382 8.16134 11.6287 7.77081C12.0192 7.38029 12.0192 6.74713 11.6287 6.3566L11.2929 6.02081L14.3137 3ZM12.8995 1.58579C13.6805 0.804738 14.9469 0.804738 15.7279 1.58579L17.299 3.15684C17.6895 3.54736 17.6895 4.18053 17.299 4.57105L17.2175 4.65257C16.7183 5.15173 16.7183 5.96103 17.2175 6.4602C17.7166 6.95936 18.5259 6.95936 19.0251 6.4602L19.1066 6.37868C19.4971 5.98816 20.1303 5.98816 20.5208 6.37868L22.0919 7.94975C22.8729 8.7308 22.8729 9.99713 22.0919 10.7782L10.7782 22.0919C9.99713 22.8729 8.7308 22.8729 7.94975 22.0919L6.37869 20.5208C5.98817 20.1303 5.98817 19.4971 6.37869 19.1066L7.02511 18.4602C7.52427 17.961 7.52427 17.1517 7.02511 16.6526C6.52594 16.1534 5.71664 16.1534 5.21748 16.6526L4.57106 17.299C4.18054 17.6895 3.54737 17.6895 3.15685 17.299L1.58579 15.7279C0.804738 14.9469 0.804738 13.6805 1.58579 12.8995L12.8995 1.58579ZM13.8787 8.6066C13.4882 8.21608 12.855 8.21608 12.4645 8.6066C12.0739 8.99712 12.0739 9.63029 12.4645 10.0208L13.4645 11.0208C13.855 11.4113 14.4882 11.4113 14.8787 11.0208C15.2692 10.6303 15.2692 9.99713 14.8787 9.6066L13.8787 8.6066Z" })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
+        React__default['default'].createElement("path", { d: "M22 10V6C22 4.89 21.1 4 20 4H4C2.9 4 2 4.89 2 6V10C3.11 10 4 10.9 4 12S3.11 14 2 14V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V14C20.9 14 20 13.1 20 12S20.9 10 22 10M20 8.54C18.81 9.23 18 10.53 18 12S18.81 14.77 20 15.46V18H4V15.46C5.19 14.77 6 13.47 6 12C6 10.5 5.2 9.23 4 8.54L4 6H20V8.54M11 15H13V17H11M11 11H13V13H11M11 7H13V9H11Z" })));
 };
 
 var Icon$Z = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z" })));
+        React__default['default'].createElement("path", { d: "M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23M6,12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12" })));
 };
 
 var Icon$_ = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M8.65854 19C15.4488 19 19.1659 13.2338 19.1659 8.23717C19.1659 8.07728 19.1659 7.91739 19.1561 7.7475C19.878 7.21785 20.5024 6.5483 21 5.78881C20.3366 6.08861 19.6244 6.28847 18.8732 6.38841C19.6341 5.91872 20.2195 5.17921 20.5024 4.28981C19.7902 4.72951 19 5.03931 18.1512 5.20919C17.478 4.45969 16.522 4 15.4585 4C13.4195 4 11.761 5.69887 11.761 7.78747C11.761 8.08728 11.8 8.36709 11.8585 8.6469C8.79512 8.497 6.07317 6.97801 4.24878 4.68954C3.92683 5.25916 3.75122 5.90873 3.75122 6.59827C3.75122 7.90739 4.40488 9.06662 5.39024 9.74617C4.78537 9.72618 4.21951 9.5563 3.72195 9.27648C3.72195 9.28648 3.72195 9.30646 3.72195 9.32645C3.72195 11.1552 5 12.6942 6.67805 13.034C6.36585 13.1239 6.0439 13.1639 5.70244 13.1639C5.46829 13.1639 5.23415 13.1439 5.00976 13.0939C5.47805 14.6029 6.8439 15.6922 8.46341 15.7222C7.19512 16.7415 5.60488 17.3411 3.87805 17.3411C3.58537 17.3411 3.28293 17.3311 3 17.2911C4.62927 18.3704 6.57073 19 8.65854 19Z" })));
+        React__default['default'].createElement("path", { d: "m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z" })));
 };
 
 var Icon$$ = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M9 12c1.93 0 3.5-1.57 3.5-3.5S10.93 5 9 5 5.5 6.57 5.5 8.5 7.07 12 9 12zm0-5c.83 0 1.5.67 1.5 1.5S9.83 10 9 10s-1.5-.67-1.5-1.5S8.17 7 9 7zm.05 10H4.77c.99-.5 2.7-1 4.23-1 .11 0 .23.01.34.01.34-.73.93-1.33 1.64-1.81-.73-.13-1.42-.2-1.98-.2-2.34 0-7 1.17-7 3.5V19h7v-1.5c0-.17.02-.34.05-.5zm7.45-2.5c-1.84 0-5.5 1.01-5.5 3V19h11v-1.5c0-1.99-3.66-3-5.5-3zm1.21-1.82c.76-.43 1.29-1.24 1.29-2.18C19 9.12 17.88 8 16.5 8S14 9.12 14 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32z" })));
+        React__default['default'].createElement("path", { d: "M16.5,12A2.5,2.5 0 0,0 19,9.5A2.5,2.5 0 0,0 16.5,7A2.5,2.5 0 0,0 14,9.5A2.5,2.5 0 0,0 16.5,12M9,11A3,3 0 0,0 12,8A3,3 0 0,0 9,5A3,3 0 0,0 6,8A3,3 0 0,0 9,11M16.5,14C14.67,14 11,14.92 11,16.75V19H22V16.75C22,14.92 18.33,14 16.5,14M9,13C6.67,13 2,14.17 2,16.5V19H9V16.75C9,15.9 9.33,14.41 11.37,13.28C10.5,13.1 9.66,13 9,13Z" })));
 };
 
 var Icon$10 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 28 28" }, props),
-        React__default['default'].createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
-        React__default['default'].createElement("path", { d: "M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" })));
+        React__default['default'].createElement("path", { d: "M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" })));
+};
+
+var Icon$11 = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React__default['default'].createElement("path", { d: "m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" })));
+};
+
+var Icon$12 = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React__default['default'].createElement("path", { d: "m7.996 21.324c0 .695-.521.982-1.098.695l-6.228-3.113c-.188-.089-.346-.238-.475-.447s-.195-.417-.195-.622v-15.227c0-.568.341-.825 1.112-.441l6.844 3.42c.099.099.026-.581.04 15.735zm.857-14.32 7.152 11.568-7.152-3.553zm15.147.241v14.079c0 .223-.062.403-.188.541-.125.138-.295.207-.509.207s-.424-.058-.629-.174l-5.906-2.939zm-.04-1.603c0 .027-1.145 1.895-3.435 5.603s-3.632 5.88-4.025 6.512l-5.223-8.469 4.339-7.039c.236-.388.72-.456 1.045-.294l7.246 3.607c.035.017.053.044.053.08z" })));
+};
+
+var Icon$13 = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React__default['default'].createElement("path", { d: "M10.802 17.77a.703.703 0 11-.002 1.406.703.703 0 01.002-1.406m11.024-4.347a.703.703 0 11.001-1.406.703.703 0 01-.001 1.406m0-2.876a2.176 2.176 0 00-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 00-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502.028-.533.212-.947.493-1.107.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474 0-.342-.354-.477-.355-.477-.658-.315-1.669-.788-2.655-1.25-2.108-.987-4.497-2.105-5.546-2.655-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 002.15 1.862 2.177 2.177 0 002.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0024 12.72a2.176 2.176 0 00-2.174-2.174" })));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({
@@ -2101,7 +2055,10 @@ var IconModule = /*#__PURE__*/Object.freeze({
     TradeIcon: Icon$Z,
     TwitterIcon: Icon$_,
     ReferralIcon: Icon$$,
-    ShieldIcon: Icon$10
+    ShieldIcon: Icon$10,
+    GithubIcon: Icon$11,
+    MediumIcon: Icon$12,
+    GitbookIcon: Icon$13
 });
 
 var MenuButton = styled__default['default'](Button)(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
@@ -2114,7 +2071,7 @@ MenuButton.defaultProps = {
 };
 var templateObject_1$x;
 
-var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
+var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 174px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 174px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -2128,7 +2085,7 @@ var Logo$1 = function (_a) {
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
-        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
+        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "14px" }, isPushed ? (React__default['default'].createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$y;
@@ -2249,67 +2206,38 @@ var links = [
 ];
 var socials = [
     {
+        label: "Github",
+        icon: "GithubIcon",
+        href: "https://github.com/pantherswap",
+    },
+    {
+        label: "Docs",
+        icon: "GitbookIcon",
+        href: "https://docs.pantherswap.com",
+    },
+    {
+        label: "Medium",
+        icon: "MediumIcon",
+        href: "https://pantherswap.medium.com",
+    },
+    {
+        label: "Twitter",
+        icon: "TwitterIcon",
+        href: "https://twitter.com/PantherSwap",
+    },
+    {
         label: "Telegram",
         icon: "TelegramIcon",
         items: [
             {
                 label: "English",
-                href: "https://t.me/pancakeswap",
-            },
-            {
-                label: "Bahasa Indonesia",
-                href: "https://t.me/PancakeSwapIndonesia",
-            },
-            {
-                label: "中文",
-                href: "https://t.me/PancakeSwap_CN",
-            },
-            {
-                label: "Tiếng Việt",
-                href: "https://t.me/PancakeSwapVN",
-            },
-            {
-                label: "Italiano",
-                href: "https://t.me/pancakeswap_ita",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/pancakeswap_ru",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/pancakeswapturkiye",
-            },
-            {
-                label: "Português",
-                href: "https://t.me/PancakeSwapPortuguese",
-            },
-            {
-                label: "Español",
-                href: "https://t.me/PancakeswapEs",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/pancakeswapjp",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/pancakeswapfr",
+                href: "https://t.me/PantherSwap",
             },
             {
                 label: "Announcements",
-                href: "https://t.me/PancakeSwapAnn",
-            },
-            {
-                label: "Whale Alert",
-                href: "https://t.me/PancakeSwapWhales",
+                href: "https://t.me/PantherSwapAnn",
             },
         ],
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/pancakeswap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2318,11 +2246,14 @@ var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
 var rainbowAnimation = styled.keyframes(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled__default['default'].div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var LinkLabel = styled__default['default'].div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n  color: ", ";\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n  color: ", ";\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.text;
 });
-var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n    color: ", ";\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n    color: ", ";\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
 }, function (_a) {
@@ -2337,6 +2268,9 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.text;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
@@ -2401,7 +2335,7 @@ var PanelBody = function (_a) {
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React__default['default'].createElement(Container$3, null, links.map(function (entry) {
         var Icon = Icons[entry.icon];
-        var iconElement = React__default['default'].createElement(Icon, { width: "24px", mr: "8px" });
+        var iconElement = React__default['default'].createElement(Icon, { width: "24px", mr: "14px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             var itemsMatchIndex = entry.items.findIndex(function (item) { return item.href === location.pathname; });
@@ -2419,16 +2353,16 @@ var PanelBody = function (_a) {
 var templateObject_1$B;
 
 var Icons$1 = IconModule;
-var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon, LanguageIcon = Icons$1.LanguageIcon;
+var LanguageIcon = Icons$1.LanguageIcon;
 var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
 var PriceLink = styled__default['default'].a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var SettingsEntry = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     if (!isPushed) {
         return (React__default['default'].createElement(Container$4, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2438,27 +2372,22 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
                 React__default['default'].createElement(Icon$w, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-            React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
-                var Icon = Icons$1[social.icon];
-                var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-                var mr = index < socials.length - 1 ? "24px" : 0;
-                if (social.items) {
-                    return (React__default['default'].createElement(Dropdown, { key: social.label, position: "top", target: React__default['default'].createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React__default['default'].createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
-                }
-                return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
-                    React__default['default'].createElement(Icon, __assign({}, iconProps))));
-            }))),
-        React__default['default'].createElement(SettingsEntry, null,
-            React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
-                React__default['default'].createElement(Flex, { alignItems: "center" },
-                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
-                    React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
+                React__default['default'].createElement(Text, { color: "text", fontSize: "15px", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
                     React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
                 // Safari fix
-                style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
+                style: { minHeight: "32px", height: "auto" } }, lang.language)); }))),
+        React__default['default'].createElement(SettingsEntry, null,
+            React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
+                var Icon = Icons$1[social.icon];
+                var iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
+                var mr = index < socials.length - 1 ? "20px" : 0;
+                if (social.items) {
+                    return (React__default['default'].createElement(Dropdown, { key: social.label, position: "top", target: React__default['default'].createElement(Icon, __assign({}, iconProps, { mr: mr, style: { display: "flex", alignItems: "center" } })) }, social.items.map(function (item) { return (React__default['default'].createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+                }
+                return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
+                    React__default['default'].createElement(Icon, __assign({}, iconProps))));
+            })))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$3;
 
@@ -2492,7 +2421,7 @@ var Panel = function (props) {
 };
 var templateObject_1$D;
 
-var Icon$11 = function (props) {
+var Icon$14 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React__default['default'].createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React__default['default'].createElement("path", { d: "M77.7602 16.9155L51.9419 36.0497L56.7382 24.7733L77.7602 16.9155Z", fill: "#E17726" }),
@@ -2526,20 +2455,20 @@ var Icon$11 = function (props) {
         React__default['default'].createElement("path", { d: "M51.9415 50.3617L52.8344 35.4115L56.7378 24.7729H39.262L43.1653 35.4115L44.0583 50.3617L44.3899 55.0559L44.4154 66.664H51.5843L51.6099 55.0559L51.9415 50.3617Z", fill: "#F5841F" })));
 };
 
-var Icon$12 = function (props) {
+var Icon$15 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React__default['default'].createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M66.4573 43.7107C64.8919 42.1452 64.8919 39.6071 66.4573 38.0416C68.0228 36.4762 70.5609 36.4762 72.1264 38.0416C73.6918 39.6071 73.6918 42.1452 72.1264 43.7107C70.5609 45.2762 68.0228 45.2762 66.4573 43.7107ZM52.9933 57.1747C51.8192 56.0006 51.8192 54.097 52.9933 52.9229C54.1674 51.7488 56.071 51.7488 57.2451 52.9229C58.4192 54.097 58.4192 56.0006 57.2451 57.1747C56.071 58.3488 54.1674 58.3488 52.9933 57.1747ZM74.2523 50.0884C73.0782 48.9143 73.0782 47.0107 74.2523 45.8366C75.4263 44.6625 77.3299 44.6625 78.504 45.8366C79.6781 47.0107 79.6781 48.9143 78.504 50.0884C77.3299 51.2625 75.4263 51.2625 74.2523 50.0884ZM67.166 57.1747C65.9919 56.0006 65.9919 54.097 67.166 52.9229C68.34 51.7488 70.2436 51.7488 71.4177 52.9229C72.5918 54.097 72.5918 56.0006 71.4177 57.1747C70.2436 58.3488 68.34 58.3488 67.166 57.1747ZM82.0472 56.466C81.2645 55.6833 81.2645 54.4142 82.0472 53.6315C82.8299 52.8488 84.099 52.8488 84.8817 53.6315C85.6644 54.4142 85.6644 55.6833 84.8817 56.466C84.099 57.2488 82.8299 57.2488 82.0472 56.466ZM74.9609 63.5523C74.1782 62.7696 74.1782 61.5005 74.9609 60.7178C75.7436 59.9351 77.0127 59.9351 77.7954 60.7178C78.5781 61.5005 78.5781 62.7696 77.7954 63.5523C77.0127 64.3351 75.7436 64.3351 74.9609 63.5523ZM59.371 50.797C57.8056 49.2315 57.8056 46.6934 59.371 45.1279C60.9365 43.5625 63.4746 43.5625 65.0401 45.1279C66.6055 46.6934 66.6055 49.2315 65.0401 50.797C63.4746 52.3625 60.9365 52.3625 59.371 50.797ZM59.371 36.6244C57.8056 35.0589 57.8056 32.5208 59.371 30.9553C60.9365 29.3899 63.4746 29.3899 65.0401 30.9553C66.6055 32.5208 66.6055 35.0589 65.0401 36.6244C63.4746 38.1898 60.9365 38.1898 59.371 36.6244ZM52.2847 43.7107C50.7193 42.1452 50.7193 39.6071 52.2847 38.0416C53.8502 36.4762 56.3883 36.4762 57.9538 38.0416C59.5192 39.6071 59.5192 42.1452 57.9538 43.7107C56.3883 45.2762 53.8502 45.2762 52.2847 43.7107ZM38.0462 43.7107C36.4808 42.1452 36.4808 39.6071 38.0462 38.0416C39.6117 36.4762 42.1498 36.4762 43.7153 38.0416C45.2807 39.6071 45.2807 42.1452 43.7153 43.7107C42.1498 45.2762 39.6117 45.2762 38.0462 43.7107ZM24.5823 57.1747C23.4082 56.0006 23.4082 54.097 24.5823 52.9229C25.7564 51.7488 27.66 51.7488 28.8341 52.9229C30.0081 54.097 30.0081 56.0006 28.8341 57.1747C27.66 58.3488 25.7564 58.3488 24.5823 57.1747ZM45.8412 50.0884C44.6671 48.9143 44.6671 47.0107 45.8412 45.8366C47.0153 44.6625 48.9189 44.6625 50.093 45.8366C51.2671 47.0107 51.2671 48.9143 50.093 50.0884C48.9189 51.2625 47.0153 51.2625 45.8412 50.0884ZM38.7549 57.1747C37.5808 56.0006 37.5808 54.097 38.7549 52.9229C39.929 51.7488 41.8326 51.7488 43.0067 52.9229C44.1807 54.097 44.1807 56.0006 43.0067 57.1747C41.8326 58.3488 39.929 58.3488 38.7549 57.1747ZM11.1183 56.466C10.3356 55.6833 10.3356 54.4142 11.1183 53.6315C11.901 52.8488 13.1701 52.8488 13.9528 53.6315C14.7356 54.4142 14.7356 55.6833 13.9528 56.466C13.1701 57.2488 11.901 57.2488 11.1183 56.466ZM18.2046 63.5523C17.4219 62.7696 17.4219 61.5005 18.2046 60.7178C18.9873 59.9351 20.2564 59.9351 21.0391 60.7178C21.8219 61.5005 21.8219 62.7696 21.0391 63.5523C20.2564 64.3351 18.9873 64.3351 18.2046 63.5523ZM46.5498 63.5523C45.7671 62.7696 45.7671 61.5005 46.5498 60.7178C47.3325 59.9351 48.6016 59.9351 49.3843 60.7178C50.1671 61.5005 50.1671 62.7696 49.3843 63.5523C48.6016 64.3351 47.3325 64.3351 46.5498 63.5523ZM17.496 50.0884C16.3219 48.9143 16.3219 47.0107 17.496 45.8366C18.6701 44.6625 20.5737 44.6625 21.7478 45.8366C22.9218 47.0107 22.9218 48.9143 21.7478 50.0884C20.5737 51.2625 18.6701 51.2625 17.496 50.0884ZM30.9599 50.797C29.3945 49.2315 29.3945 46.6934 30.9599 45.1279C32.5254 43.5625 35.0635 43.5625 36.629 45.1279C38.1944 46.6934 38.1944 49.2315 36.629 50.797C35.0635 52.3625 32.5254 52.3625 30.9599 50.797ZM30.9599 36.6244C29.3945 35.0589 29.3945 32.5208 30.9599 30.9553C32.5254 29.3899 35.0635 29.3899 36.629 30.9553C38.1944 32.5208 38.1944 35.0589 36.629 36.6244C35.0635 38.1898 32.5254 38.1898 30.9599 36.6244ZM23.8736 43.7107C22.3082 42.1452 22.3082 39.6071 23.8736 38.0416C25.4391 36.4762 27.9772 36.4762 29.5427 38.0416C31.1081 39.6071 31.1081 42.1452 29.5427 43.7107C27.9772 45.2762 25.4391 45.2762 23.8736 43.7107Z", fill: "#1D222A" })));
 };
 
-var Icon$13 = function (props) {
+var Icon$16 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React__default['default'].createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React__default['default'].createElement("path", { d: "M44.3288 35.3546V21.7134H19.0926C18.581 21.7134 18.24 22.0544 18.24 22.566V41.8342C18.24 42.3457 18.581 42.6867 19.0926 42.6867H28.8119V77.8129C28.8119 78.3244 29.153 78.6654 29.6645 78.6654H45.5224C46.0339 78.6654 46.375 78.3244 46.375 77.8129V35.3546H44.3288Z", fill: "#29AEFF" }),
         React__default['default'].createElement("path", { d: "M61.8919 17.2798H55.7534H39.2134C38.7019 17.2798 38.3608 17.6208 38.3608 18.1324V73.3792C38.3608 73.8908 38.7019 74.2318 39.2134 74.2318H55.0713C55.5829 74.2318 55.9239 73.8908 55.9239 73.3792V59.397H62.0624C73.6575 59.397 83.0358 50.0187 83.0358 38.4237C83.0358 26.6581 73.487 17.2798 61.8919 17.2798Z", fill: "#2761E7" })));
 };
 
-var Icon$14 = function (props) {
+var Icon$17 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React__default['default'].createElement("g", { clipPath: "url(#clip0)" },
             React__default['default'].createElement("path", { d: "M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z", fill: "#3375BB" }),
@@ -2549,13 +2478,13 @@ var Icon$14 = function (props) {
                 React__default['default'].createElement("rect", { width: "96", height: "96", fill: "white" })))));
 };
 
-var Icon$15 = function (props) {
+var Icon$18 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React__default['default'].createElement("path", { d: "M96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96C74.5097 96 96 74.5097 96 48Z", fill: "#3389FB" }),
         React__default['default'].createElement("path", { d: "M29.6927 35.4245C39.8036 25.5252 56.1965 25.5252 66.3074 35.4245L67.5242 36.6159C68.0298 37.1109 68.0298 37.9134 67.5242 38.4084L63.3616 42.4839C63.1088 42.7314 62.699 42.7314 62.4462 42.4839L60.7717 40.8444C53.7181 33.9384 42.282 33.9384 35.2284 40.8444L33.4351 42.6002C33.1823 42.8477 32.7725 42.8477 32.5197 42.6002L28.3571 38.5247C27.8515 38.0297 27.8515 37.2272 28.3571 36.7322L29.6927 35.4245ZM74.9161 43.8532L78.6208 47.4805C79.1264 47.9755 79.1264 48.778 78.6208 49.2729L61.9159 65.6288C61.4103 66.1237 60.5907 66.1237 60.0851 65.6288C60.0851 65.6288 60.0851 65.6288 60.0851 65.6288L48.229 54.0206C48.1026 53.8968 47.8977 53.8968 47.7713 54.0206C47.7713 54.0206 47.7713 54.0206 47.7713 54.0206L35.9153 65.6288C35.4098 66.1237 34.5902 66.1237 34.0846 65.6288C34.0846 65.6288 34.0846 65.6288 34.0846 65.6288L17.3792 49.2727C16.8736 48.7778 16.8736 47.9753 17.3792 47.4803L21.0839 43.853C21.5895 43.3581 22.4091 43.3581 22.9146 43.853L34.771 55.4614C34.8974 55.5851 35.1023 55.5851 35.2287 55.4614C35.2287 55.4614 35.2287 55.4614 35.2287 55.4614L47.0844 43.853C47.59 43.358 48.4096 43.358 48.9152 43.853C48.9152 43.853 48.9152 43.853 48.9152 43.853L60.7715 55.4614C60.8979 55.5851 61.1028 55.5851 61.2292 55.4614L73.0854 43.8532C73.5909 43.3583 74.4105 43.3583 74.9161 43.8532Z", fill: "white" })));
 };
 
-var Icon$16 = function (props) {
+var Icon$19 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
         React__default['default'].createElement("path", { d: "M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z", fill: "#1E2026" }),
         React__default['default'].createElement("path", { d: "M16.2857 4L9.97035 7.6761L12.2922 9.03415L16.2857 6.7161L20.2792 9.03415L22.6011 7.6761L16.2857 4Z", fill: "#F0B90B" }),
@@ -2573,32 +2502,32 @@ var Icon$16 = function (props) {
 var connectors = [
     {
         title: "Metamask",
-        icon: Icon$11,
-        connectorId: "injected",
-    },
-    {
-        title: "TrustWallet",
         icon: Icon$14,
         connectorId: "injected",
     },
     {
+        title: "TrustWallet",
+        icon: Icon$17,
+        connectorId: "injected",
+    },
+    {
         title: "MathWallet",
-        icon: Icon$12,
+        icon: Icon$15,
         connectorId: "injected",
     },
     {
         title: "TokenPocket",
-        icon: Icon$13,
+        icon: Icon$16,
         connectorId: "injected",
     },
     {
         title: "WalletConnect",
-        icon: Icon$15,
+        icon: Icon$18,
         connectorId: "walletconnect",
     },
     {
         title: "Binance Chain Wallet",
-        icon: Icon$16,
+        icon: Icon$19,
         connectorId: "bsc",
     },
 ];
@@ -2880,20 +2809,20 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#1FC7D4",
-    primaryBright: "#53DEE9",
-    primaryDark: "#0098A1",
+    primary: "#FF720D",
+    primaryBright: "#e66000",
+    primaryDark: "#d95b00",
     secondary: "#7645D9",
-    success: "#31D0AA",
-    warning: "#FFB237",
+    success: "#68CF29",
+    warning: "#FFAB2D",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputBorder: "#cccccc", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputBorder: "#cccccc", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#FF720D", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", inputBorder: "#cccccc", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#e9f1fd", background: "#1f2b46", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f3b", inputBorder: "#cccccc", primaryDark: "#d95b00", tertiary: "#2d2f37", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#FF720D", borderColor: "#524B63", card: "#121827", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
