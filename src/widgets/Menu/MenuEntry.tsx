@@ -21,6 +21,7 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 const MenuEntry = styled.div<Props>`
@@ -39,6 +40,7 @@ const MenuEntry = styled.div<Props>`
     align-items: center;
     width: 100%;
     height: 100%;
+    color: ${({ theme }) => theme.colors.text};
   }
 
   svg {
