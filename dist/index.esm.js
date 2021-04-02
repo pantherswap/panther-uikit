@@ -340,7 +340,7 @@ var Icon$p = function (props) {
 
 var Icon$q = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React.createElement("image", { href: "data:image/png;base64,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", width: "32" })));
+        React.createElement("image", { href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAC/VBMVEUAAADb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08vb08seADLb08tCdc8fATQdAC4fADUZAB0cACgYABkbACQaACEXABUcACsdADAWABIWAA5BdM3a0spAc8tDd9FIh+cAABQVAAsRAABJi+xrof9EetVDedMfBTj//+0DABxEfNjYz8gAAA1Hg+JGguByqf9KjvD/++kAABhEfttAccdFgN0AABFIier69eU9aLohCz8qJ2UpJ2AnH1o9ZbY2UZolGVIiDkMZAC4/bsM+a78jEUcUAAY9cMk6bcY1S5M0SY8mHVYgCTseCjFKj/IvOn1Jje5HheTe1s3WzscyQogrK2odBi9MlflLkPUxQYQwP4AkGk0HAB/99+c8bsc3VqD//Os4V6QhDjYfCTbh2dA8YrLq49c5W6kuOHYrMWsoJlsmI1UiFkQ3Up0sNG8lHlAkFEwjGEgSASj07uA7Ya8sLm/y7N46Xq4qLmRvpf9NmP7t5tnl3tMzRo0oIl8hEz9Om/9Lkvf38eJJfNbo4dXj3NE5a8Q1TpYtM3QPACYgDjsWASsMACN2rf85WqdSpv/v6dxNgNqdk5n//yZQov9on/lXjObQysEJACJdku2HeoYtNXsvPnpxY3VglvBShN2lnZ8yR4p4a3pWRF8RABNmnPbHwLq0q6uUi5FPQVl5tP9Qn/9/dIBmWGw5IEgxGkEAAC6+trS4sK40Gy8CAAPNqABTh+GtpqVbTWNimPSNgotfVGZGMVImFzVIPVNCK081JkQBAEIsHz10VhtANU08L0sMADcVAjaAxf9rV3AtEj5fQyO9mQRUrv/KpSz/9SkUACJafs0REl+4li3/4irYsRT///g1aMBaS3IzLWDiyS5PNSyhfyeVcg6mggBMZrHUxm9iWEXzxxGkoML/3leEalH5MdXqAAAAJHRSTlMAWWYv947hUAnQvJilF7RJ6HAn2K2HH8PvEXo5yn3Gd0E+f35M0WO4AAAgL0lEQVR42tVbB3wb5RUvEJImQIFSCt1Lpzvd1p2WJUWSLVuybMmW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", width: "32" })));
 };
 
 var Icon$r = function (props) {
@@ -1144,41 +1144,47 @@ var Progress = function (_a) {
         secondaryStep ? React.createElement(Bar, { style: { width: stepGuard(secondaryStep) + "%" } }) : null));
 };
 
-var Icon$I = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 256 256" }, props),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M166.898 204.279C172.402 190.795 170.197 176.127 166.942 163.633C164.747 155.208 156.522 149.043 143.339 146.339C130.289 143.662 113.23 144.62 95.212 149.658C77.1941 154.696 61.9863 162.761 52.0088 171.877C41.9295 181.085 37.8164 190.7 40.0117 199.126C43.2669 211.619 48.4857 225.444 59.7919 234.228C70.9463 242.894 88.7701 247.193 118.461 238.891C148.152 230.589 161.467 217.582 166.898 204.279ZM119.268 241.986C179.746 225.075 176.514 188.072 169.929 162.798C164.622 142.43 131.106 136.301 94.4056 146.563C57.7053 156.825 31.7183 179.593 37.0251 199.961C43.6102 225.235 58.7891 258.897 119.268 241.986Z", fill: "#464649" }),
-        React.createElement("path", { d: "M155.801 175.68C158.653 186.628 180.351 181.576 214.977 171.894C249.604 162.212 257.158 150.578 254.305 139.63C251.453 128.682 244.685 121.053 216.678 128.884C182.051 138.566 152.948 164.732 155.801 175.68Z", fill: "#606063" }),
-        React.createElement("path", { d: "M159.97 178.737L175.437 178.709C178.284 178.704 178.523 174.429 177.474 164.815C176.82 158.816 173.457 154.101 171.27 155.477L159.942 163.875L159.97 178.737Z", fill: "#464649" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M162.261 177.996C160.059 177.319 159.158 176.266 158.788 174.845C158.644 174.296 158.636 173.375 159.104 171.965C159.566 170.568 160.432 168.889 161.754 166.98C164.397 163.161 168.612 158.775 174.091 154.332C185.037 145.456 200.6 136.7 217.484 131.979C231.34 128.104 239.201 128.297 243.777 130.191C248.018 131.946 250.005 135.425 251.319 140.465C251.901 142.7 251.928 144.848 251.283 146.962C250.634 149.091 249.235 151.411 246.622 153.858C241.312 158.83 231.342 163.998 214.171 168.799C196.798 173.657 182.967 177.263 173.149 178.336C168.216 178.875 164.644 178.728 162.261 177.996ZM214.977 171.894C180.351 181.576 158.653 186.628 155.801 175.68C152.948 164.732 182.051 138.566 216.678 128.884C244.685 121.053 251.453 128.682 254.305 139.63C257.158 150.578 249.604 162.212 214.977 171.894Z", fill: "#464649" }),
-        React.createElement("path", { d: "M169.925 161.024C176.511 186.298 179.743 223.301 119.264 240.212C58.7859 257.123 43.607 223.461 37.022 198.187C31.7151 177.819 57.7022 155.052 94.4024 144.789C131.103 134.527 164.619 140.656 169.925 161.024Z", fill: "#606063" }),
-        React.createElement("path", { d: "M62.2322 217.512C45.5076 212.12 42.4613 203.795 40.3848 196.052L41.9594 211.275L50.2352 225.685L64.4374 238.481L80.947 244.327C82.4065 243.612 89.4986 243.299 83.1029 242.028C76.7073 240.758 72.7474 234.756 69.9914 231.378C68.2638 226.484 67.7365 219.287 62.2322 217.512Z", fill: "#464649" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M166.895 202.505C172.399 189.021 170.194 174.353 166.939 161.86C164.744 153.434 156.519 147.269 143.336 144.565C130.286 141.888 113.227 142.846 95.2088 147.884C77.1909 152.922 61.9831 160.987 52.0056 170.103C41.9263 179.311 37.8132 188.926 40.0086 197.352C43.2637 209.845 48.4825 223.67 59.7887 232.454C70.9431 241.12 88.7669 245.419 118.458 237.117C148.149 228.815 161.464 215.809 166.895 202.505ZM119.264 240.212C179.743 223.301 176.511 186.298 169.925 161.024C164.619 140.656 131.103 134.527 94.4024 144.789C57.7022 155.052 31.7151 177.819 37.022 198.187C43.607 223.461 58.7859 257.123 119.264 240.212Z", fill: "#464649" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M164.233 181.686C165.018 182.322 165.157 183.497 164.543 184.311C162.98 186.382 161.187 188.422 159.188 190.412C158.469 191.128 157.327 191.104 156.636 190.36C155.945 189.615 155.968 188.431 156.687 187.716C158.576 185.834 160.252 183.925 161.7 182.007C162.314 181.193 163.448 181.05 164.233 181.686ZM57.4215 216.239C57.6566 215.235 58.6323 214.619 59.6008 214.863C73.2899 218.308 91.7045 217.793 111.035 212.388C120.262 209.808 128.779 206.37 136.271 202.374C137.157 201.901 138.245 202.263 138.701 203.181C139.157 204.099 138.809 205.226 137.923 205.699C130.195 209.821 121.438 213.352 111.976 215.998C92.2044 221.527 73.1589 222.124 58.7494 218.497C57.7809 218.253 57.1863 217.242 57.4215 216.239Z", fill: "#979797" }),
-        React.createElement("path", { d: "M159.836 163.292C164.405 180.829 141.059 195.381 109.857 204.106C78.655 212.831 51.4793 212.682 46.8428 194.887C42.2064 177.092 65.6193 162.798 96.8214 154.074C128.024 145.349 155.266 145.755 159.836 163.292Z", fill: "#464649" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M145.831 183.549C154.508 176.998 157.462 170.578 155.854 164.406C154.245 158.233 148.575 154.225 137.894 153.086C127.333 151.96 113.281 153.898 97.8965 158.2C82.4985 162.506 69.3986 168.094 60.8132 174.54C52.1526 181.043 49.1801 187.461 50.825 193.774C52.4698 200.087 58.1557 204.083 68.7987 205.189C79.3491 206.285 93.384 204.285 108.782 199.98C124.166 195.678 137.251 190.028 145.831 183.549ZM110.264 205.113C141.466 196.388 164.405 180.829 159.836 163.292C155.266 145.755 128.024 145.349 96.8214 154.074C65.6193 162.798 42.2064 177.092 46.8428 194.887C51.4793 212.682 79.0614 213.838 110.264 205.113Z", fill: "#737373" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M103.877 181.153C89.0555 185.297 76.4977 192.072 68.1169 199.619C67.3647 200.297 66.2249 200.214 65.5711 199.434C64.9173 198.655 64.997 197.474 65.7492 196.796C74.622 188.806 87.7006 181.803 102.936 177.543C106.034 176.676 109.107 175.955 112.134 175.375C113.114 175.187 114.056 175.858 114.237 176.873C114.419 177.889 113.771 178.864 112.792 179.052C109.86 179.614 106.881 180.313 103.877 181.153ZM123.847 175.658C123.792 174.627 124.554 173.745 125.549 173.688C132.378 173.297 138.774 173.682 144.424 174.797C145.403 174.991 146.046 175.97 145.86 176.984C145.673 177.999 144.728 178.664 143.749 178.471C138.431 177.421 132.333 177.045 125.749 177.422C124.753 177.479 123.902 176.69 123.847 175.658Z", fill: "#606063" })));
-};
-
-var Icon$J = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 128 128" }, props),
-        React.createElement("svg", { width: "128", height: "128", viewBox: "0 0 128 128", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-            React.createElement("path", { d: "M56.7204 37.5858C56.7204 45.3822 58.0271 54.1169 60.2906 60.8591C61.4246 64.2369 62.7705 67.0285 64.249 68.946C65.742 70.8826 67.1906 71.7103 68.5307 71.7103C71.1919 71.7103 74.4165 70.5307 77.8384 68.3524C81.235 66.1902 84.7001 63.1234 87.8127 59.5481C94.0844 52.3439 98.6784 43.3694 98.6784 35.942C98.6784 28.1653 97.1567 21.2636 93.9931 16.3543C90.8793 11.5222 86.1363 8.54284 79.3564 8.54284C72.6009 8.54284 66.9825 11.9157 63.0072 17.2564C59.0174 22.6164 56.7204 29.9263 56.7204 37.5858Z", fill: "#FEDC90", stroke: "#D1884F", strokeWidth: "2.89134" }),
-            React.createElement("path", { d: "M32.7442 66.7859C39.4364 62.9222 47.2575 60.5211 53.8454 59.9252C57.1411 59.6272 60.0564 59.7876 62.336 60.3933C64.6294 61.0028 66.1079 62.0118 66.8368 63.2742C69.6116 68.0804 69.9429 76.4856 67.7501 84.8501C65.5656 93.1829 61.0085 100.957 54.6069 104.653C47.9434 108.5 40.9505 110.185 34.8292 109.454C28.7533 108.729 23.476 105.626 20.0729 99.7316C16.6658 93.8305 16.5364 87.5528 18.8757 81.7754C21.228 75.9659 26.1018 70.6209 32.7442 66.7859Z", fill: "#D1884F", stroke: "#633001", strokeWidth: "2.89134" }),
-            React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M73.6122 7.76013C69.4145 8.86483 64.8207 11.0867 61.24 16.1556C53.2804 27.4231 51.7006 41.9592 58.5495 60.7386C65.3984 79.518 63.3431 89.9236 56.0487 98.3189C48.7543 106.714 29.475 108.685 23.3482 101.929C21.8481 100.274 17.4954 97.4588 20.3675 102.54C23.2397 107.622 30.7527 111.748 39.59 111.748C48.4273 111.748 55.5943 108.146 61.958 101.338C68.3217 94.5306 74.292 78.3883 68.3268 61.7709C60.6331 40.3385 62.8311 27.508 68.2893 19.7815C71.0879 15.8198 75.5453 12.3629 78.6077 10.5868C81.8233 8.72183 84.8797 8.42294 86.8682 8.42294C83.3332 6.65548 77.8099 6.65542 73.6122 7.76013Z", fill: "#633001" }))));
-};
-
-var rotate$1 = keyframes(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
-var float = keyframes(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
-var Container$1 = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var RotatingPancakeIcon = styled(Icon$J)(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
-var FloatingPanIcon = styled(Icon$I)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
+// const rotate = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `;
+//
+// const float = keyframes`
+// 	0% {
+// 		transform: translatey(0px);
+// 	}
+// 	50% {
+// 		transform: translatey(10px);
+// 	}
+// 	100% {
+// 		transform: translatey(0px);
+// 	}
+// `;
+var pulse = keyframes(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n"], ["\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  50% {\n    transform: scale3d(1.05, 1.05, 1.05);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n"])));
+var Container$1 = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
+// const RotatingPancakeIcon = styled(PancakeIcon)`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   animation: ${rotate} 2s linear infinite;
+//   transform: translate3d(0, 0, 0);
+// `;
+//
+// const FloatingPanIcon = styled(PanIcon)`
+//   animation: ${float} 6s ease-in-out infinite;
+//   transform: translate3d(0, 0, 0);
+// `;
+var PulseLogoIcon = styled(Icon$q)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), pulse);
 var Spinner = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 128 : _b;
     return (React.createElement(Container$1, null,
-        React.createElement(RotatingPancakeIcon, { width: size * 0.5 + "px" }),
-        React.createElement(FloatingPanIcon, { width: size + "px" })));
+        React.createElement(PulseLogoIcon, { width: size * 0.5 + "px" })));
 };
-var templateObject_1$r, templateObject_2$6, templateObject_3$2, templateObject_4$1, templateObject_5;
+var templateObject_1$r, templateObject_2$6, templateObject_3$2;
 
 var animation = {
     WAVES: "waves",
@@ -1190,7 +1196,7 @@ var variant = {
 };
 
 var waves = keyframes(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"], ["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"])));
-var pulse = keyframes(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"], ["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"])));
+var pulse$1 = keyframes(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"], ["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"])));
 var Root = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"], ["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.backgroundDisabled;
@@ -1198,8 +1204,8 @@ var Root = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplate
     var variant$1 = _a.variant, theme = _a.theme;
     return (variant$1 === variant.CIRCLE ? theme.radii.circle : theme.radii.small);
 }, layout, space);
-var Pulse = styled(Root)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"])), pulse);
-var Waves = styled(Root)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"], ["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"])), waves);
+var Pulse = styled(Root)(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"])), pulse$1);
+var Waves = styled(Root)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"], ["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"])), waves);
 var Skeleton = function (_a) {
     var _b = _a.variant, variant$1 = _b === void 0 ? variant.RECT : _b, _c = _a.animation, animation$1 = _c === void 0 ? animation.PULSE : _c, props = __rest(_a, ["variant", "animation"]);
     if (animation$1 === animation.WAVES) {
@@ -1207,7 +1213,7 @@ var Skeleton = function (_a) {
     }
     return React.createElement(Pulse, __assign({ variant: variant$1 }, props));
 };
-var templateObject_1$s, templateObject_2$7, templateObject_3$3, templateObject_4$2, templateObject_5$1;
+var templateObject_1$s, templateObject_2$7, templateObject_3$3, templateObject_4$1, templateObject_5;
 
 var scaleKeyValues = {
     sm: {
@@ -1902,42 +1908,42 @@ var useModal = function (modal, closeOnOverlayClick) {
     return [onPresentCallback, onDismiss];
 };
 
-var Icon$K = function (props) {
+var Icon$I = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M13.3 2.79L9.8 6.29L10.5 7L11.9 5.61L13 6.71V9C13 10.11 12.11 11 11 11H10.46A6 6 0 0 1 12 15A6 6 0 0 1 11.91 16H15.03A4.5 4.5 0 0 1 19.5 12A4.5 4.5 0 0 1 22 12.76V8C22 6.89 21.11 6 20 6H13.71L12.61 4.9L14 3.5L13.3 2.79M4 7C3.45 7 3 7.45 3 8C3 8.55 3.45 9 4 9H9C9 7.9 8.11 7 7 7H4M6 10A5 5 0 0 0 4.44 10.25L4.8 11.18L4.33 11.36L4 10.43A5 5 0 0 0 1.54 12.74L2.45 13.15L2.24 13.6L1.34 13.2A5 5 0 0 0 1 15A5 5 0 0 0 1.25 16.56L2.18 16.2L2.36 16.67L1.43 17A5 5 0 0 0 3.74 19.46L4.14 18.55L4.6 18.76L4.2 19.66A5 5 0 0 0 6 20A5 5 0 0 0 7.56 19.75L7.2 18.82L7.67 18.64L8 19.57A5 5 0 0 0 10.46 17.26L9.55 16.86L9.76 16.4L10.66 16.8A5 5 0 0 0 11 15A5 5 0 0 0 10.75 13.44L9.82 13.8L9.64 13.33L10.57 13A5 5 0 0 0 8.26 10.54L7.86 11.45L7.4 11.24L7.8 10.34A5 5 0 0 0 6 10M6 12A3 3 0 0 1 9 15A3 3 0 0 1 6 18A3 3 0 0 1 3 15A3 3 0 0 1 6 12M19.5 13A3.5 3.5 0 0 0 16 16.5A3.5 3.5 0 0 0 19.5 20A3.5 3.5 0 0 0 23 16.5A3.5 3.5 0 0 0 19.5 13M19.5 15A1.5 1.5 0 0 1 21 16.5A1.5 1.5 0 0 1 19.5 18A1.5 1.5 0 0 1 18 16.5A1.5 1.5 0 0 1 19.5 15Z" })));
 };
 
-var Icon$L = function (props) {
+var Icon$J = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 12.75C13.63 12.75 15.07 13.14 16.24 13.65C17.32 14.13 18 15.21 18 16.38V17C18 17.55 17.55 18 17 18H7C6.45 18 6 17.55 6 17V16.39C6 15.21 6.68 14.13 7.76 13.66C8.93 13.14 10.37 12.75 12 12.75ZM4 13C5.1 13 6 12.1 6 11C6 9.9 5.1 9 4 9C2.9 9 2 9.9 2 11C2 12.1 2.9 13 4 13ZM5.13 14.1C4.76 14.04 4.39 14 4 14C3.01 14 2.07 14.21 1.22 14.58C0.48 14.9 0 15.62 0 16.43V17C0 17.55 0.45 18 1 18H4.5V16.39C4.5 15.56 4.73 14.78 5.13 14.1ZM20 13C21.1 13 22 12.1 22 11C22 9.9 21.1 9 20 9C18.9 9 18 9.9 18 11C18 12.1 18.9 13 20 13ZM24 16.43C24 15.62 23.52 14.9 22.78 14.58C21.93 14.21 20.99 14 20 14C19.61 14 19.24 14.04 18.87 14.1C19.27 14.78 19.5 15.56 19.5 16.39V18H23C23.55 18 24 17.55 24 17V16.43ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6Z" })));
 };
 
-var Icon$M = function (props) {
+var Icon$K = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" })));
 };
 
-var Icon$N = function (props) {
+var Icon$L = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4 18H15C15.55 18 16 17.55 16 17C16 16.45 15.55 16 15 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H12C12.55 13 13 12.55 13 12C13 11.45 12.55 11 12 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H15C15.55 8 16 7.55 16 7C16 6.45 15.55 6 15 6H4C3.45 6 3 6.45 3 7ZM20.3 14.88L17.42 12L20.3 9.12C20.69 8.73 20.69 8.1 20.3 7.71C19.91 7.32 19.28 7.32 18.89 7.71L15.3 11.3C14.91 11.69 14.91 12.32 15.3 12.71L18.89 16.3C19.28 16.69 19.91 16.69 20.3 16.3C20.68 15.91 20.69 15.27 20.3 14.88Z" })));
 };
 
-var Icon$O = function (props) {
+var Icon$M = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" })));
 };
 
-var Icon$P = function (props) {
+var Icon$N = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
         React.createElement("path", { d: "M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M19.22 4C19.5 4 19.75 4 19.96 4.05C20.13 5.44 19.94 8.3 16.66 11.58C14.96 13.29 12.93 14.6 10.65 15.47L8.5 13.37C9.42 11.06 10.73 9.03 12.42 7.34C15.18 4.58 17.64 4 19.22 4M19.22 2C17.24 2 14.24 2.69 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.62 17.27 10.13 17.5 10.66 17.5C10.89 17.5 11.13 17.44 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39S20.7 2 19.22 2M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z" })));
 };
 
-var Icon$Q = function (props) {
+var Icon$O = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
         React.createElement("path", { d: "M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z" })));
 };
 
-var Icon$R = function (props) {
+var Icon$P = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" })));
 };
@@ -1949,103 +1955,103 @@ var Logo = function (_a) {
         React.createElement("image", { href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAAaCAMAAAAZiZe/AAAC91BMVEUAAAD///////////////////////////////////////////////////////////////////3///////////////7///////////////3///r///r//////////////////////////////////////////////////////////////vz///////////////////////////////////////////////////////////////////////////////////////////////////////////////v///3////8+vX///////////////////////////////////////3//////////vqJfYj////m39b////////9+ej+++n//vmmm6C4rqq+tK65sa3EubDMx7n///+6tK/Px7v////////x59b//uv9+uj/////++r//u6CcHKWhYGypqKYh4i/trW+t7KtpqfPx7ypnpPp49nRybnh3dHy79/Ry8X//+zUyr/9+ubs6Nrh18nk3dD+9uDv6tz58eT//+769OT58+T///8AAAADABUBAA0fAzAzSpEeBzgrL2gnJVogDj8GACAZAB0XABRSm/1DdMkvPn0XGU0iGEUfF0AEADkcASkWAScRAiMTAAsAAAdDe9g4Xqw7Xp43UJksN28pKV0kHUsFBEoiEkQQBzocDjYCAS8dBSwAACZ4xf9KheRFes5Bbb49ZrU5YbM6Yq0kMXcuOHZoWGhSQFpTQVUlJVE8KkojGEkaDkUaAyIRAAFfpP5MkPVZlOxVjuk3WaSdlJswS5uOipAwRIouQn9+cn4vQXhzZnMsMm5zXmcQH2MpJGAhLF82M11VS1o9NlElHlECDlEeFU4oFk0vHkMfFjaBbSgTABoNAABuwP9Tqv9spPpLhdU+ddVKdLsrUKVLZ6Q8VJuOhIJMV3BLSGlfUGZsdV5ERFKKjktIPktSM0UpEzd7cjUrJzWslikgGyNdQx4eABsyFhMIAAH8F1ZUAAAAi3RSTlMAgP3dNyheSs+ORzsuCQLwuRXy2J53UduHQx8ZB/jp49XSzcfDs3RqMiISDfrtta6opaKZlnxxblRAPTT05eHLvZB5WVhENisdGhjfxcCvq5tmYk4mFgsF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", width: "174" })));
 };
 
-var Icon$S = function (props) {
+var Icon$Q = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("rect", { fill: "none", height: "24", width: "24" }),
         React.createElement("path", { d: "M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" })));
 };
 
-var Icon$T = function (props) {
+var Icon$R = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" })));
 };
 
-var Icon$U = function (props) {
+var Icon$S = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12.8533 3.39627C12.4634 2.75821 11.5366 2.75821 11.1467 3.39627L7.42977 9.47855C7.02256 10.1449 7.50213 11 8.28306 11H15.7169C16.4979 11 16.9774 10.1449 16.5702 9.47855L12.8533 3.39627ZM12 5.84L13.93 9H10.06L12 5.84ZM17.5 13C15.01 13 13 15.01 13 17.5C13 19.99 15.01 22 17.5 22C19.99 22 22 19.99 22 17.5C22 15.01 19.99 13 17.5 13ZM17.5 20C16.12 20 15 18.88 15 17.5C15 16.12 16.12 15 17.5 15C18.88 15 20 16.12 20 17.5C20 18.88 18.88 20 17.5 20ZM3 19.5C3 20.6046 3.89543 21.5 5 21.5H9C10.1046 21.5 11 20.6046 11 19.5V15.5C11 14.3954 10.1046 13.5 9 13.5H5C3.89543 13.5 3 14.3954 3 15.5V19.5ZM5 15.5H9V19.5H5V15.5Z" })));
 };
 
-var Icon$V = function (props) {
+var Icon$T = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M17.2,5V5C17.8,5 18.4,5 18.9,5.1C19.1,7.4 19.1,12 16.4,15.2C14.4,17.7 11,19 6.4,19C6,19 5.5,19 5.1,19C4.9,14.4 5.8,10.8 7.9,8.5C10.4,5.6 14.4,5 17.2,5M17.2,3C11.7,3 1.6,5.1 3.2,20.8C4.3,20.9 5.4,21 6.4,21C24.3,21 20.7,3.3 20.7,3.3C20.7,3.3 19.3,3 17.2,3M17,7C7,7 7,17 7,17C11,9 17,7 17,7Z" })));
 };
 
-var Icon$W = function (props) {
+var Icon$U = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("rect", { fill: "none", height: "24", width: "24" }),
         React.createElement("path", { d: "M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" })));
 };
 
-var Icon$X = function (props) {
+var Icon$V = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" })));
 };
 
-var Icon$Y = function (props) {
+var Icon$W = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 26 26" }, props),
         React.createElement("path", { d: "M22 10V6C22 4.89 21.1 4 20 4H4C2.9 4 2 4.89 2 6V10C3.11 10 4 10.9 4 12S3.11 14 2 14V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V14C20.9 14 20 13.1 20 12S20.9 10 22 10M20 8.54C18.81 9.23 18 10.53 18 12S18.81 14.77 20 15.46V18H4V15.46C5.19 14.77 6 13.47 6 12C6 10.5 5.2 9.23 4 8.54L4 6H20V8.54M11 15H13V17H11M11 11H13V13H11M11 7H13V9H11Z" })));
 };
 
-var Icon$Z = function (props) {
+var Icon$X = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23M6,12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12" })));
 };
 
-var Icon$_ = function (props) {
+var Icon$Y = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z" })));
 };
 
-var Icon$$ = function (props) {
+var Icon$Z = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M16.5,12A2.5,2.5 0 0,0 19,9.5A2.5,2.5 0 0,0 16.5,7A2.5,2.5 0 0,0 14,9.5A2.5,2.5 0 0,0 16.5,12M9,11A3,3 0 0,0 12,8A3,3 0 0,0 9,5A3,3 0 0,0 6,8A3,3 0 0,0 9,11M16.5,14C14.67,14 11,14.92 11,16.75V19H22V16.75C22,14.92 18.33,14 16.5,14M9,13C6.67,13 2,14.17 2,16.5V19H9V16.75C9,15.9 9.33,14.41 11.37,13.28C10.5,13.1 9.66,13 9,13Z" })));
 };
 
-var Icon$10 = function (props) {
+var Icon$_ = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 28 28" }, props),
         React.createElement("path", { d: "M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" })));
 };
 
-var Icon$11 = function (props) {
+var Icon$$ = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" })));
 };
 
-var Icon$12 = function (props) {
+var Icon$10 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "m7.996 21.324c0 .695-.521.982-1.098.695l-6.228-3.113c-.188-.089-.346-.238-.475-.447s-.195-.417-.195-.622v-15.227c0-.568.341-.825 1.112-.441l6.844 3.42c.099.099.026-.581.04 15.735zm.857-14.32 7.152 11.568-7.152-3.553zm15.147.241v14.079c0 .223-.062.403-.188.541-.125.138-.295.207-.509.207s-.424-.058-.629-.174l-5.906-2.939zm-.04-1.603c0 .027-1.145 1.895-3.435 5.603s-3.632 5.88-4.025 6.512l-5.223-8.469 4.339-7.039c.236-.388.72-.456 1.045-.294l7.246 3.607c.035.017.053.044.053.08z" })));
 };
 
-var Icon$13 = function (props) {
+var Icon$11 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M10.802 17.77a.703.703 0 11-.002 1.406.703.703 0 01.002-1.406m11.024-4.347a.703.703 0 11.001-1.406.703.703 0 01-.001 1.406m0-2.876a2.176 2.176 0 00-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 00-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502.028-.533.212-.947.493-1.107.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474 0-.342-.354-.477-.355-.477-.658-.315-1.669-.788-2.655-1.25-2.108-.987-4.497-2.105-5.546-2.655-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 002.15 1.862 2.177 2.177 0 002.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0024 12.72a2.176 2.176 0 00-2.174-2.174" })));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    FarmIcon: Icon$K,
-    GroupsIcon: Icon$L,
-    HamburgerIcon: Icon$M,
-    HamburgerCloseIcon: Icon$N,
-    HomeIcon: Icon$O,
-    IfoIcon: Icon$P,
-    InfoIcon: Icon$Q,
-    LanguageIcon: Icon$R,
+    FarmIcon: Icon$I,
+    GroupsIcon: Icon$J,
+    HamburgerIcon: Icon$K,
+    HamburgerCloseIcon: Icon$L,
+    HomeIcon: Icon$M,
+    IfoIcon: Icon$N,
+    InfoIcon: Icon$O,
+    LanguageIcon: Icon$P,
     LogoIcon: Logo,
-    MoonIcon: Icon$S,
-    MoreIcon: Icon$T,
-    NftIcon: Icon$U,
-    PoolIcon: Icon$V,
-    SunIcon: Icon$W,
-    TelegramIcon: Icon$X,
-    TicketIcon: Icon$Y,
-    TradeIcon: Icon$Z,
-    TwitterIcon: Icon$_,
-    ReferralIcon: Icon$$,
-    ShieldIcon: Icon$10,
-    GithubIcon: Icon$11,
-    MediumIcon: Icon$12,
-    GitbookIcon: Icon$13
+    MoonIcon: Icon$Q,
+    MoreIcon: Icon$R,
+    NftIcon: Icon$S,
+    PoolIcon: Icon$T,
+    SunIcon: Icon$U,
+    TelegramIcon: Icon$V,
+    TicketIcon: Icon$W,
+    TradeIcon: Icon$X,
+    TwitterIcon: Icon$Y,
+    ReferralIcon: Icon$Z,
+    ShieldIcon: Icon$_,
+    GithubIcon: Icon$$,
+    MediumIcon: Icon$10,
+    GitbookIcon: Icon$11
 });
 
 var MenuButton = styled(Button)(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
@@ -2072,7 +2078,7 @@ var Logo$1 = function (_a) {
         React.createElement(Icon$q, { className: "mobile-icon" }),
         React.createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "14px" }, isPushed ? (React.createElement(Icon$N, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$M, { width: "24px", color: "textSubtle" }))),
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "14px" }, isPushed ? (React.createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$y;
@@ -2347,7 +2353,7 @@ var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeT
 });
 var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SettingsEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
-var SocialEntry = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     if (!isPushed) {
@@ -2376,7 +2382,7 @@ var PanelFooter = function (_a) {
                     React.createElement(Icon, __assign({}, iconProps))));
             })))));
 };
-var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$3;
+var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
 var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -2408,7 +2414,7 @@ var Panel = function (props) {
 };
 var templateObject_1$D;
 
-var Icon$14 = function (props) {
+var Icon$12 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M77.7602 16.9155L51.9419 36.0497L56.7382 24.7733L77.7602 16.9155Z", fill: "#E17726" }),
@@ -2442,20 +2448,20 @@ var Icon$14 = function (props) {
         React.createElement("path", { d: "M51.9415 50.3617L52.8344 35.4115L56.7378 24.7729H39.262L43.1653 35.4115L44.0583 50.3617L44.3899 55.0559L44.4154 66.664H51.5843L51.6099 55.0559L51.9415 50.3617Z", fill: "#F5841F" })));
 };
 
-var Icon$15 = function (props) {
+var Icon$13 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M66.4573 43.7107C64.8919 42.1452 64.8919 39.6071 66.4573 38.0416C68.0228 36.4762 70.5609 36.4762 72.1264 38.0416C73.6918 39.6071 73.6918 42.1452 72.1264 43.7107C70.5609 45.2762 68.0228 45.2762 66.4573 43.7107ZM52.9933 57.1747C51.8192 56.0006 51.8192 54.097 52.9933 52.9229C54.1674 51.7488 56.071 51.7488 57.2451 52.9229C58.4192 54.097 58.4192 56.0006 57.2451 57.1747C56.071 58.3488 54.1674 58.3488 52.9933 57.1747ZM74.2523 50.0884C73.0782 48.9143 73.0782 47.0107 74.2523 45.8366C75.4263 44.6625 77.3299 44.6625 78.504 45.8366C79.6781 47.0107 79.6781 48.9143 78.504 50.0884C77.3299 51.2625 75.4263 51.2625 74.2523 50.0884ZM67.166 57.1747C65.9919 56.0006 65.9919 54.097 67.166 52.9229C68.34 51.7488 70.2436 51.7488 71.4177 52.9229C72.5918 54.097 72.5918 56.0006 71.4177 57.1747C70.2436 58.3488 68.34 58.3488 67.166 57.1747ZM82.0472 56.466C81.2645 55.6833 81.2645 54.4142 82.0472 53.6315C82.8299 52.8488 84.099 52.8488 84.8817 53.6315C85.6644 54.4142 85.6644 55.6833 84.8817 56.466C84.099 57.2488 82.8299 57.2488 82.0472 56.466ZM74.9609 63.5523C74.1782 62.7696 74.1782 61.5005 74.9609 60.7178C75.7436 59.9351 77.0127 59.9351 77.7954 60.7178C78.5781 61.5005 78.5781 62.7696 77.7954 63.5523C77.0127 64.3351 75.7436 64.3351 74.9609 63.5523ZM59.371 50.797C57.8056 49.2315 57.8056 46.6934 59.371 45.1279C60.9365 43.5625 63.4746 43.5625 65.0401 45.1279C66.6055 46.6934 66.6055 49.2315 65.0401 50.797C63.4746 52.3625 60.9365 52.3625 59.371 50.797ZM59.371 36.6244C57.8056 35.0589 57.8056 32.5208 59.371 30.9553C60.9365 29.3899 63.4746 29.3899 65.0401 30.9553C66.6055 32.5208 66.6055 35.0589 65.0401 36.6244C63.4746 38.1898 60.9365 38.1898 59.371 36.6244ZM52.2847 43.7107C50.7193 42.1452 50.7193 39.6071 52.2847 38.0416C53.8502 36.4762 56.3883 36.4762 57.9538 38.0416C59.5192 39.6071 59.5192 42.1452 57.9538 43.7107C56.3883 45.2762 53.8502 45.2762 52.2847 43.7107ZM38.0462 43.7107C36.4808 42.1452 36.4808 39.6071 38.0462 38.0416C39.6117 36.4762 42.1498 36.4762 43.7153 38.0416C45.2807 39.6071 45.2807 42.1452 43.7153 43.7107C42.1498 45.2762 39.6117 45.2762 38.0462 43.7107ZM24.5823 57.1747C23.4082 56.0006 23.4082 54.097 24.5823 52.9229C25.7564 51.7488 27.66 51.7488 28.8341 52.9229C30.0081 54.097 30.0081 56.0006 28.8341 57.1747C27.66 58.3488 25.7564 58.3488 24.5823 57.1747ZM45.8412 50.0884C44.6671 48.9143 44.6671 47.0107 45.8412 45.8366C47.0153 44.6625 48.9189 44.6625 50.093 45.8366C51.2671 47.0107 51.2671 48.9143 50.093 50.0884C48.9189 51.2625 47.0153 51.2625 45.8412 50.0884ZM38.7549 57.1747C37.5808 56.0006 37.5808 54.097 38.7549 52.9229C39.929 51.7488 41.8326 51.7488 43.0067 52.9229C44.1807 54.097 44.1807 56.0006 43.0067 57.1747C41.8326 58.3488 39.929 58.3488 38.7549 57.1747ZM11.1183 56.466C10.3356 55.6833 10.3356 54.4142 11.1183 53.6315C11.901 52.8488 13.1701 52.8488 13.9528 53.6315C14.7356 54.4142 14.7356 55.6833 13.9528 56.466C13.1701 57.2488 11.901 57.2488 11.1183 56.466ZM18.2046 63.5523C17.4219 62.7696 17.4219 61.5005 18.2046 60.7178C18.9873 59.9351 20.2564 59.9351 21.0391 60.7178C21.8219 61.5005 21.8219 62.7696 21.0391 63.5523C20.2564 64.3351 18.9873 64.3351 18.2046 63.5523ZM46.5498 63.5523C45.7671 62.7696 45.7671 61.5005 46.5498 60.7178C47.3325 59.9351 48.6016 59.9351 49.3843 60.7178C50.1671 61.5005 50.1671 62.7696 49.3843 63.5523C48.6016 64.3351 47.3325 64.3351 46.5498 63.5523ZM17.496 50.0884C16.3219 48.9143 16.3219 47.0107 17.496 45.8366C18.6701 44.6625 20.5737 44.6625 21.7478 45.8366C22.9218 47.0107 22.9218 48.9143 21.7478 50.0884C20.5737 51.2625 18.6701 51.2625 17.496 50.0884ZM30.9599 50.797C29.3945 49.2315 29.3945 46.6934 30.9599 45.1279C32.5254 43.5625 35.0635 43.5625 36.629 45.1279C38.1944 46.6934 38.1944 49.2315 36.629 50.797C35.0635 52.3625 32.5254 52.3625 30.9599 50.797ZM30.9599 36.6244C29.3945 35.0589 29.3945 32.5208 30.9599 30.9553C32.5254 29.3899 35.0635 29.3899 36.629 30.9553C38.1944 32.5208 38.1944 35.0589 36.629 36.6244C35.0635 38.1898 32.5254 38.1898 30.9599 36.6244ZM23.8736 43.7107C22.3082 42.1452 22.3082 39.6071 23.8736 38.0416C25.4391 36.4762 27.9772 36.4762 29.5427 38.0416C31.1081 39.6071 31.1081 42.1452 29.5427 43.7107C27.9772 45.2762 25.4391 45.2762 23.8736 43.7107Z", fill: "#1D222A" })));
 };
 
-var Icon$16 = function (props) {
+var Icon$14 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M44.3288 35.3546V21.7134H19.0926C18.581 21.7134 18.24 22.0544 18.24 22.566V41.8342C18.24 42.3457 18.581 42.6867 19.0926 42.6867H28.8119V77.8129C28.8119 78.3244 29.153 78.6654 29.6645 78.6654H45.5224C46.0339 78.6654 46.375 78.3244 46.375 77.8129V35.3546H44.3288Z", fill: "#29AEFF" }),
         React.createElement("path", { d: "M61.8919 17.2798H55.7534H39.2134C38.7019 17.2798 38.3608 17.6208 38.3608 18.1324V73.3792C38.3608 73.8908 38.7019 74.2318 39.2134 74.2318H55.0713C55.5829 74.2318 55.9239 73.8908 55.9239 73.3792V59.397H62.0624C73.6575 59.397 83.0358 50.0187 83.0358 38.4237C83.0358 26.6581 73.487 17.2798 61.8919 17.2798Z", fill: "#2761E7" })));
 };
 
-var Icon$17 = function (props) {
+var Icon$15 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("g", { clipPath: "url(#clip0)" },
             React.createElement("path", { d: "M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z", fill: "#3375BB" }),
@@ -2465,13 +2471,13 @@ var Icon$17 = function (props) {
                 React.createElement("rect", { width: "96", height: "96", fill: "white" })))));
 };
 
-var Icon$18 = function (props) {
+var Icon$16 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("path", { d: "M96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96C74.5097 96 96 74.5097 96 48Z", fill: "#3389FB" }),
         React.createElement("path", { d: "M29.6927 35.4245C39.8036 25.5252 56.1965 25.5252 66.3074 35.4245L67.5242 36.6159C68.0298 37.1109 68.0298 37.9134 67.5242 38.4084L63.3616 42.4839C63.1088 42.7314 62.699 42.7314 62.4462 42.4839L60.7717 40.8444C53.7181 33.9384 42.282 33.9384 35.2284 40.8444L33.4351 42.6002C33.1823 42.8477 32.7725 42.8477 32.5197 42.6002L28.3571 38.5247C27.8515 38.0297 27.8515 37.2272 28.3571 36.7322L29.6927 35.4245ZM74.9161 43.8532L78.6208 47.4805C79.1264 47.9755 79.1264 48.778 78.6208 49.2729L61.9159 65.6288C61.4103 66.1237 60.5907 66.1237 60.0851 65.6288C60.0851 65.6288 60.0851 65.6288 60.0851 65.6288L48.229 54.0206C48.1026 53.8968 47.8977 53.8968 47.7713 54.0206C47.7713 54.0206 47.7713 54.0206 47.7713 54.0206L35.9153 65.6288C35.4098 66.1237 34.5902 66.1237 34.0846 65.6288C34.0846 65.6288 34.0846 65.6288 34.0846 65.6288L17.3792 49.2727C16.8736 48.7778 16.8736 47.9753 17.3792 47.4803L21.0839 43.853C21.5895 43.3581 22.4091 43.3581 22.9146 43.853L34.771 55.4614C34.8974 55.5851 35.1023 55.5851 35.2287 55.4614C35.2287 55.4614 35.2287 55.4614 35.2287 55.4614L47.0844 43.853C47.59 43.358 48.4096 43.358 48.9152 43.853C48.9152 43.853 48.9152 43.853 48.9152 43.853L60.7715 55.4614C60.8979 55.5851 61.1028 55.5851 61.2292 55.4614L73.0854 43.8532C73.5909 43.3583 74.4105 43.3583 74.9161 43.8532Z", fill: "white" })));
 };
 
-var Icon$19 = function (props) {
+var Icon$17 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
         React.createElement("path", { d: "M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z", fill: "#1E2026" }),
         React.createElement("path", { d: "M16.2857 4L9.97035 7.6761L12.2922 9.03415L16.2857 6.7161L20.2792 9.03415L22.6011 7.6761L16.2857 4Z", fill: "#F0B90B" }),
@@ -2489,32 +2495,32 @@ var Icon$19 = function (props) {
 var connectors = [
     {
         title: "Metamask",
-        icon: Icon$14,
+        icon: Icon$12,
         connectorId: "injected",
     },
     {
         title: "TrustWallet",
-        icon: Icon$17,
-        connectorId: "injected",
-    },
-    {
-        title: "MathWallet",
         icon: Icon$15,
         connectorId: "injected",
     },
     {
+        title: "MathWallet",
+        icon: Icon$13,
+        connectorId: "injected",
+    },
+    {
         title: "TokenPocket",
-        icon: Icon$16,
+        icon: Icon$14,
         connectorId: "injected",
     },
     {
         title: "WalletConnect",
-        icon: Icon$18,
+        icon: Icon$16,
         connectorId: "walletconnect",
     },
     {
         title: "Binance Chain Wallet",
-        icon: Icon$19,
+        icon: Icon$17,
         connectorId: "bsc",
     },
 ];
@@ -2640,7 +2646,7 @@ var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTem
     return theme.nav.background;
 });
 var BodyWrapper = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
+var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
@@ -2653,7 +2659,7 @@ var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplat
     var isPushed = _a.isPushed;
     return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -2706,7 +2712,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$4, templateObject_5$2;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1;
 
 var ToastAction = function (_a) {
     var action = _a.action;
