@@ -21,3 +21,7 @@ export { default as ShieldIcon } from "./Shield";
 export { default as GithubIcon } from "./Github";
 export { default as MediumIcon } from "./Medium";
 export { default as GitbookIcon } from "./Gitbook";
+export { default as JungleIcon } from "./Jungle";
+export { default as ListingIcon } from "./Listing";
+export { default as FaucetIcon } from "./Faucet";
+export { default as AirdropIcon } from "./Airdrop";
