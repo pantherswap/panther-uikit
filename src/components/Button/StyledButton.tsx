@@ -48,7 +48,7 @@ const getButtonVariantProp = (prop: keyof ButtonThemeVariant) => ({
 const StyledButton = styled.button<ButtonProps>`
   align-items: center;
   background-color: ${getButtonVariantProp("background")};
-  border: 0;
+  border: ${getButtonVariantProp("border")};
   border-radius: 16px;
   box-shadow: ${getButtonVariantProp("boxShadow")};
   color: ${getButtonVariantProp("color")};
@@ -69,7 +69,7 @@ const StyledButton = styled.button<ButtonProps>`
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
 
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
-    opacity: 0.75;
+    opacity: 0.8;
   }
 
   &:active:not(:disabled):not(.button--disabled) {
