@@ -49,7 +49,7 @@ const StyledButton = styled.button<ButtonProps>`
   align-items: center;
   background-color: ${getButtonVariantProp("background")};
   border: ${getButtonVariantProp("border")};
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: ${getButtonVariantProp("boxShadow")};
   color: ${getButtonVariantProp("color")};
   cursor: pointer;

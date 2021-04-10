@@ -12,8 +12,14 @@ const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
 
 const StyledButtonMenu = styled.div<{ variant: Variants }>`
   background-color: ${getBackgroundColor};
-  border-radius: 16px;
+  border-radius: 8px;
   display: inline-flex;
+
+  button,
+  a {
+    height: 40px;
+    padding: 0 24px;
+  }
 
   & > button + button,
   & > a + a {
