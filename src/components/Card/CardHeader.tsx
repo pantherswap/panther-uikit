@@ -4,8 +4,8 @@ import { space, SpaceProps } from "styled-system";
 export type CardHeaderProps = SpaceProps;
 
 const CardHeader = styled.div<CardHeaderProps>`
-  background: ${({ theme }) => theme.card.cardHeaderBackground};
-
+  // background: ${({ theme }) => theme.card.cardHeaderBackground};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
   ${space}
 `;
 
