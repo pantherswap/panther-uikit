@@ -2823,7 +2823,7 @@ var ResetCSS = createGlobalStyle(templateObject_1$K || (templateObject_1$K = __m
 var templateObject_1$K;
 
 var baseColors = {
-    failure: "#ED4B9E",
+    failure: "#F72B50",
     primary: "#FF720D",
     primaryBright: "#e66000",
     primaryDark: "#d95b00",
