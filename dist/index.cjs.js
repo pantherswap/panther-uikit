@@ -1621,8 +1621,8 @@ var mediaQueries = {
 var shadows = {
     level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     active: "0px 0px 0px 1px #FF720D, 0px 0px 4px 8px rgba(255, 114, 13, 0.4)",
-    success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
-    warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+    success: "0px 0px 0px 1px #68CF29, 0px 0px 0px 4px rgba(104, 207, 41, 0.2)",
+    warning: "0px 0px 0px 1px #F72B50, 0px 0px 0px 4px rgba(247, 43, 80, 0.2)",
     focus: "0px 0px 0px 1px #e66000, 0px 0px 0px 4px rgba(230, 96, 0, 0.6)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
@@ -2624,7 +2624,7 @@ var AccountModal = function (_a) {
             React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
-            React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React__default['default'].createElement(Button, { size: "md", variant: "secondary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
@@ -2850,7 +2850,7 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputBorder: "#cccccc", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#FF720D", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#e9f1fd", background: "#1f2b46", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f3b", inputBorder: "#cccccc", primaryDark: "#d95b00", tertiary: "#2d2f37", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#FF720D", borderColor: "#524B63", card: "#121827", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#e9f1fd", background: "#1f2b46", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#0a0e17", input: "#483f3b", inputBorder: "#cccccc", primaryDark: "#d95b00", tertiary: "#2d2f37", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#FF720D", borderColor: "#524B63", card: "#121827", gradients: {
         bubblegum: "linear-gradient(139.73deg, #1f606f 0%, #164865 100%)",
     } });
 
