@@ -22,8 +22,8 @@ const mediaQueries: MediaQueries = {
 export const shadows = {
   level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
   active: "0px 0px 0px 1px #FF720D, 0px 0px 4px 8px rgba(255, 114, 13, 0.4)",
-  success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
-  warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+  success: "0px 0px 0px 1px #68CF29, 0px 0px 0px 4px rgba(104, 207, 41, 0.2)",
+  warning: "0px 0px 0px 1px #F72B50, 0px 0px 0px 4px rgba(247, 43, 80, 0.2)",
   focus: "0px 0px 0px 1px #e66000, 0px 0px 0px 4px rgba(230, 96, 0, 0.6)",
   inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
