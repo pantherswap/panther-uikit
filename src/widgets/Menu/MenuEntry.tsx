@@ -56,10 +56,15 @@ const MenuEntry = styled.div<Props>`
 
   &.rainbow {
     -webkit-background-clip: text;
-    animation: ${rainbowAnimation} 3s ease-in-out infinite;
+    background-clip: text;
+    color: transparent;
+    animation: ${rainbowAnimation} 5s ease-in-out infinite;
     background: ${({ theme }) => theme.colors.gradients.bubblegum};
-    background-size: 200% 100%;
-    font-weight: bold;
+    background-size: 400% 100%;
+
+    a > div {
+      color: ${({ theme }) => theme.colors.textSubtle};
+    }
   }
 `;
 MenuEntry.defaultProps = {
