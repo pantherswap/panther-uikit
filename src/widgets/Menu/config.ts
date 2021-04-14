@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://dex.pantherswap.com",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://dex.pantherswap.com/#/pool",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.pancakeswap.finance",
+        href: "https://voting.pantherswap.com",
       },
       {
         label: "Github",
@@ -103,7 +103,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://docs.pantherswap.com",
       },
       {
         label: "Blog",
