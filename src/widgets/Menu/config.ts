@@ -76,16 +76,16 @@ export const links = [
     ],
   },
   {
-    label: "IFO",
-    icon: "IfoIcon",
+    label: "IPO",
+    icon: "IpoIcon",
     items: [
       {
         label: "Next",
-        href: "/ifo",
+        href: "/ipo",
       },
       {
         label: "History",
-        href: "/ifo/history",
+        href: "/ipo/history",
       },
     ],
   },
