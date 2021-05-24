@@ -25,5 +25,4 @@ export { default as JungleIcon } from "./Jungle";
 export { default as ListingIcon } from "./Listing";
 export { default as FaucetIcon } from "./Faucet";
 export { default as AirdropIcon } from "./Airdrop";
-export { default as PriceGuardIcon } from "./PriceGuard";
 export { default as ChartIcon } from "./Chart";

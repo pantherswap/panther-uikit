@@ -59,19 +59,19 @@ export const links = [
     items: [
       {
         label: "Overview",
-        href: "https://pancakeswap.info",
+        href: "https://pantherswap.info",
       },
       {
         label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
+        href: "https://pantherswap.info/tokens",
       },
       {
         label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
+        href: "https://pantherswap.info/pairs",
       },
       {
         label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
+        href: "https://pantherswap.info/accounts",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const links = [
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com",
+        href: "https://pantherswap.medium.com",
       },
     ],
   },
