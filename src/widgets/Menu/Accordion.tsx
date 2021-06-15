@@ -7,6 +7,8 @@ import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../components/Svg";
 
 interface Props extends PushedProps {
   label: string;
+  isMobile: boolean;
+  isPushed: boolean;
   icon: React.ReactElement;
   initialOpenState?: boolean;
   className?: string;
@@ -23,15 +25,13 @@ const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHei
   max-height: ${({ isOpen, maxHeight }) => (isOpen ? `${maxHeight}px` : 0)};
   transition: max-height 0.3s ease-out;
   overflow: hidden;
-  border-color: ${({ isOpen, isPushed }) => (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent")};
-  border-style: solid;
-  border-width: 1px;
 `;
 
 const Accordion: React.FC<Props> = ({
   label,
-  icon,
+  isMobile,
   isPushed,
+  icon,
   pushNav,
   initialOpenState = false,
   children,
@@ -50,10 +50,12 @@ const Accordion: React.FC<Props> = ({
 
   return (
     <Container>
-      <MenuEntry onClick={handleClick} className={className}>
+      <MenuEntry isMobile={isMobile} isPushed={isPushed} onClick={handleClick} className={className}>
         {icon}
-        <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
+        {isPushed && <>
+        <LinkLabel isMobile={isMobile} isPushed={isPushed}>{label}</LinkLabel>
         {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+        </>}
       </MenuEntry>
       <AccordionContent
         isOpen={isOpen}

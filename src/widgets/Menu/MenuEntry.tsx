@@ -2,6 +2,8 @@ import styled, { keyframes, DefaultTheme } from "styled-components";
 import { MENU_ENTRY_HEIGHT } from "./config";
 
 export interface Props {
+  isMobile: boolean;
+  isPushed: boolean;
   secondary?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
@@ -17,24 +19,27 @@ const rainbowAnimation = keyframes`
   }
 `;
 
-const LinkLabel = styled.div<{ isPushed: boolean }>`
+const LinkLabel = styled.div<Props>`
   color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
   color: ${({ theme }) => theme.colors.text};
+  padding-left: 12px;
 `;
 
 const MenuEntry = styled.div<Props>`
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
+  padding-left: ${({ secondary, isPushed }) => (secondary ? "29px" : isPushed ? "13px" : 0)};  
+  padding-right: ${({isPushed}) => (isPushed ? "12px" : 0)};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
+  background-color: ${({ isActive }) => (isActive ? "rgba(107, 161, 255, 0.6)" : "none")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
-
+  width: ${({ isPushed }) => (isPushed ? "100%" : "48px")};
+  border-radius: ${({ isPushed }) => (isPushed ? "8px" : "50%")};
   a {
     display: flex;
     align-items: center;
@@ -48,7 +53,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+    background-color: ${({ isMobile, theme }) => isMobile ? "none" : theme.colors.tertiary};
   }
 
   // Safari fix
@@ -68,6 +73,8 @@ const MenuEntry = styled.div<Props>`
   }
 `;
 MenuEntry.defaultProps = {
+  isMobile: true,
+  isPushed: true,
   secondary: false,
   isActive: false,
   role: "button",

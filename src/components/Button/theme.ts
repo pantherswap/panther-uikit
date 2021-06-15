@@ -15,14 +15,14 @@ export const light: ButtonTheme = {
     color: "#FFFFFF",
   },
   [SECONDARY]: {
-    background: "transparent",
+    background: "#FFFFFF",
     backgroundActive: "transparent",
     backgroundHover: "transparent",
-    border: `2px solid ${lightColors.primary}`,
+    border: 0,
     borderColorHover: lightColors.primaryBright,
     boxShadow: "none",
     boxShadowActive: "none",
-    color: lightColors.primary,
+    color: "#FF6B2A",
   },
   [TERTIARY]: {
     background: lightColors.tertiary,
@@ -73,7 +73,7 @@ export const light: ButtonTheme = {
     boxShadow: "none",
     boxShadowActive: "none",
     color: "#FFFFFF",
-  },
+  }
 };
 
 export const dark: ButtonTheme = {
@@ -102,5 +102,5 @@ export const dark: ButtonTheme = {
   },
   [SUCCESS]: {
     ...light.success,
-  },
+  }
 };

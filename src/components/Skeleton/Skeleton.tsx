@@ -29,7 +29,7 @@ const Root = styled.div<SkeletonProps>`
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundDisabled};
   border-radius: ${({ variant, theme }) => (variant === VARIANT.CIRCLE ? theme.radii.circle : theme.radii.small)};
-
+  margin-right: 8px;
   ${layout}
   ${space}
 `;

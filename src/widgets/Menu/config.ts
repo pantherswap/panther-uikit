@@ -7,16 +7,7 @@ export const links = [
   {
     label: "Trade",
     icon: "TradeIcon",
-    items: [
-      {
-        label: "Exchange",
-        href: "https://dex.pantherswap.com",
-      },
-      {
-        label: "Liquidity",
-        href: "https://dex.pantherswap.com/#/pool",
-      },
-    ],
+    href: "https://dex.pantherswap.com",
   },
   {
     label: "Farms",
@@ -29,30 +20,33 @@ export const links = [
     href: "/syrup",
   },
   {
+    label: "Divider",
+  },
+  {
     label: "Lottery",
-    icon: "TicketIcon",
+    icon: "LotteryIcon",
     href: "/lottery",
   },
-  {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    items: [
-      {
-        label: "Leaderboard",
-        href: "/",
-      },
-      {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
+  // {
+  //   label: "NFT",
+  //   icon: "NftIcon",
+  //   href: "/nft",
+  // },
+  // {
+  //   label: "Profile & Teams",
+  //   icon: "GroupsIcon",
+  //   items: [
+  //     {
+  //       label: "Leaderboard",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "YourProfile",
+  //       href: "/",
+  //     },
+  //   ],
+  //   calloutClass: "rainbow",
+  // },
   {
     label: "Info",
     icon: "InfoIcon",
@@ -115,9 +109,9 @@ export const links = [
 
 export const socials = [
   {
-    label: "Github",
-    icon: "GithubIcon",
-    href: "https://github.com/pantherswap",
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/PantherSwap",
   },
   {
     label: "Docs",
@@ -130,9 +124,9 @@ export const socials = [
     href: "https://pantherswap.medium.com",
   },
   {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/PantherSwap",
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: "",
   },
   {
     label: "Telegram",
@@ -152,5 +146,5 @@ export const socials = [
 
 export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
-export const SIDEBAR_WIDTH_FULL = 240;
-export const SIDEBAR_WIDTH_REDUCED = 56;
+export const SIDEBAR_WIDTH_FULL = 288;
+export const SIDEBAR_WIDTH_REDUCED = 96;

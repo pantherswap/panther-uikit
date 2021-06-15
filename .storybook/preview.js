@@ -18,15 +18,15 @@ export const parameters = {
 
 const themes = [
   {
-    name: "Light",
-    backgroundColor: light.colors.background,
-    ...light,
-  },
-  {
     name: "Dark",
     backgroundColor: dark.colors.background,
     ...dark,
   },
+  {
+    name: "Light",
+    backgroundColor: light.colors.background,
+    ...light,
+  }
 ];
 
 export const decorators = [globalDecorator, withThemesProvider(themes)];

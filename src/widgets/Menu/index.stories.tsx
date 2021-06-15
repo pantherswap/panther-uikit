@@ -177,8 +177,12 @@ export const MenuEntryComponent: React.FC = () => {
   return (
     <Flex justifyContent="space-between" p="16px" style={{ backgroundColor: "wheat" }}>
       <MenuEntry>Default</MenuEntry>
-      <MenuEntry secondary>Secondary</MenuEntry>
-      <MenuEntry isActive>isActive</MenuEntry>
+      <MenuEntry secondary>
+        Secondary
+      </MenuEntry>
+      <MenuEntry isActive>
+        isActive
+      </MenuEntry>
     </Flex>
   );
 };

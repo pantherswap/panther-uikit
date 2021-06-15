@@ -11,10 +11,10 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <svg
-        class="sc-bdfBwQ cuuOmQ"
+        class="sc-bdfBwQ kfuXcI"
         color="text"
         viewBox="0 0 24 24"
-        width="20px"
+        width="24px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
