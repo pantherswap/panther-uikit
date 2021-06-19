@@ -1,7 +1,7 @@
 # Contributing to the Panther ecosystem
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.pantherswap.com/code/contributing) first.
+You can start by reading our [Contribution guidelines](https://eveswap.finance/code/contributing) first.
 
 ## Setup
 
