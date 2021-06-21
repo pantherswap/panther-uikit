@@ -4,22 +4,22 @@ import { ToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
 
 const scaleKeyValues = {
   sm: {
-    handleHeight: "16px",
-    handleWidth: "16px",
+    handleHeight: "26px",
+    handleWidth: "26px",
     handleLeft: "2px",
     handleTop: "2px",
-    checkedLeft: "calc(100% - 18px)",
+    checkedLeft: "calc(100% - 24px)",
     toggleHeight: "20px",
-    toggleWidth: "36px",
+    toggleWidth: "44px",
   },
   md: {
-    handleHeight: "32px",
-    handleWidth: "32px",
+    handleHeight: "46px",
+    handleWidth: "46px",
     handleLeft: "4px",
     handleTop: "4px",
-    checkedLeft: "calc(100% - 36px)",
+    checkedLeft: "calc(100% - 46px)",
     toggleHeight: "40px",
-    toggleWidth: "72px",
+    toggleWidth: "64px",
   },
 };
 
@@ -28,16 +28,15 @@ const getScale = (property: ScaleKeys) => ({ scale = scales.MD }: ToggleProps) =
 };
 
 export const Handle = styled.div<HandleProps>`
-  background-color: ${({ theme }) => theme.toggle.handleBackground};
+  background-color: #3D65CA;
   border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};
-  left: ${getScale("handleLeft")};
   position: absolute;
-  top: ${getScale("handleTop")};
   transition: left 200ms ease-in;
   width: ${getScale("handleWidth")};
   z-index: 1;
+  left: -1px;
 `;
 
 export const Input = styled.input<InputProps>`
@@ -63,7 +62,7 @@ export const Input = styled.input<InputProps>`
 
 const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
-  background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
+  background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "text"]};
   border-radius: 24px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
