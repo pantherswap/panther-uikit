@@ -59,19 +59,19 @@ export const links = [
     items: [
       {
         label: "Overview",
-        href: "https://pantherswap.info",
+        href: "https://eveswap.finance",
       },
       {
         label: "Tokens",
-        href: "https://pantherswap.info/tokens",
+        href: "https://eveswap.finance/tokens",
       },
       {
         label: "Pairs",
-        href: "https://pantherswap.info/pairs",
+        href: "https://eveswap.finance/pairs",
       },
       {
         label: "Accounts",
-        href: "https://pantherswap.info/accounts",
+        href: "https://eveswap.finance/accounts",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const links = [
       },
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/eveswap-finance",
       },
       {
         label: "Docs",
@@ -107,7 +107,7 @@ export const links = [
       },
       {
         label: "Blog",
-        href: "https://pantherswap.medium.com",
+        href: "https://eveswap.medium.com",
       },
     ],
   },
@@ -117,7 +117,7 @@ export const socials = [
   {
     label: "Github",
     icon: "GithubIcon",
-    href: "https://github.com/pantherswap",
+    href: "https://github.com/eveswap-finance",
   },
   {
     label: "Docs",
@@ -127,12 +127,12 @@ export const socials = [
   {
     label: "Medium",
     icon: "MediumIcon",
-    href: "https://pantherswap.medium.com",
+    href: "https://eveswap.finance.medium.com",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/PantherSwap",
+    href: "https://twitter.com/EveSwap",
   },
   {
     label: "Telegram",
@@ -140,11 +140,11 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/PantherSwap",
+        href: "https://t.me/EveSwap",
       },
       {
         label: "Announcements",
-        href: "https://t.me/PantherSwapAnn",
+        href: "https://t.me/EveSwapAnn",
       },
     ],
   },

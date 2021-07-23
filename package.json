@@ -1,5 +1,5 @@
 {
-  "name": "@pantherswap-libs/uikit",
+  "name": "@eveswap-finance/eve-uikit",
   "version": "0.1.1",
   "description": "Set of UI components for panther projects",
   "main": "dist/index.cjs.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pantherswap/panther-uikit",
+  "repository": "https://github.com/eveswap-finance/eve-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",

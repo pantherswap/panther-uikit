@@ -7,7 +7,7 @@ import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
 
-export interface PantherTheme {
+export interface EveTheme {
   siteWidth: number;
   isDark: boolean;
   alert: AlertTheme;
